@@ -73,6 +73,12 @@
         "depNumbers":1,
         "activity":"الاجهزة الكهربائية",
       "place":["ابو النمروس"]}
+      ,{
+        "name":"الافندى",
+        "depNumbers":1,
+        "activity":"ادوات كهربائية",
+        "place":["حدائق الاهرام"]
+      }
     ]
   },
   {
@@ -161,7 +167,7 @@
       "place": ["درب سعادة"]
     },
     {
-      "name": "شركة نو را لاستيراد وتصدير الادوات",
+      "name": "شركة نورا لاستيراد وتصدير الادوات",
       "depNumbers": 1,
       "activity":"ادوات منزلية",
       "place": ["أبو النمرس"]
@@ -272,12 +278,6 @@
       "place": ["مصر الجديدة"]
     },
     {
-      "name": "ايجيبت للهندسة والتجارة",
-      "depNumbers": 1,
-      "activity":"المقاولات",
-      "place": ["السادس من أكتوبر"]
-    },
-    {
       "name": "شركة ريادة تك للتجارة",
       "depNumbers": 1,
       "activity":"المقاولات",
@@ -345,7 +345,7 @@
       "place": ["الحسين"]
     },
     {
-      "name": "شركة دشدا شتي للملابس الجاهزة",
+      "name": "شركة دشداشتى  للملابس الجاهزة",
       "depNumbers": 1,
       "activity": "ملابس",
       "place": ["السعودية"]
@@ -367,12 +367,6 @@
       "depNumbers": 1,
       "activity": "ملابس",
       "place": ["حلوان"]
-    },
-    {
-      "name": "Helman",
-      "depNumbers": 1,
-      "activity": "مصنع ملابس",
-      "place": ["العبور"]
     },
     {
       "name": "سنتر المتوكل للملابس",
@@ -399,7 +393,7 @@
       "place": ["شبرا الخيمة"]
     },
     {
-      "name": "مصنع سكاي موضةم",
+      "name": "مصنع سكاي موضة",
       "depNumbers": 1,
       "activity": "مصنع ملابس",
       "place": ["البحيرة"]
@@ -443,13 +437,13 @@
       "place": ["مدينة نصر", "التوفيقية", "دمياط"]
     },
     {
-      "name": "شركة هليوبوليس للاستيراد والتصدير",
+      "name": "شركة هليوبوليس للاستيراد والتصدير والتجارة ",
       "depNumbers": 1,
       "activity": "قطع غيار سيارات",
       "place": ["التوفيقية"]
     },
     {
-      "name": "السلاموني عاطف AM",
+      "name": "عاطف السلاموني AM",
       "depNumbers": 1,
       "activity": "قطع غيار النقل الثقيل",
       "place": ["قليوب"]
@@ -517,51 +511,1035 @@
     
   ]
 },
-  { "name": "الأثاث والديكور", "icon": "fa-couch" },
-  { "name": "الدراجات والأدوات الرياضية", "icon": "fa-bicycle" },
-  { "name": "الحديد ومواد البناء", "icon": "fa-industry" },
-  { "name": "السيراميك والبورسلين", "icon": "fa-th-large" },
-  { "name": "الدهانات و الديكورات", "icon": "fa-paint-roller" },
-  { "name": "مستلزمات طبية", "icon": "fa-briefcase-medical" },
-  { "name": "مركز طبي", "icon": "fa-hospital" },
-  { "name": "مستشفيات", "icon": "fa-hospital-alt" },
-  { "name": "زجاج السيارات", "icon": "fa-car" },
-  { "name": "صيانة السيارات", "icon": "fa-tools" },
-  { "name": "نانو سيراميك للسيارات", "icon": "fa-spray-can" },
-  { "name": "كماليات السيارات", "icon": "fa-gift" },
-  { "name": "مركز صيانة سيارات", "icon": "fa-wrench" },
-  { "name": "الموازين", "icon": "fa-balance-scale" },
-  { "name": "الكافتيريات والمطاعم", "icon": "fa-utensils" },
-  { "name": "مكتبات", "icon": "fa-book" },
-  { "name": "اكسسوارات حريمي", "icon": "fa-ring" },
-  { "name": "مستلزمات فنادق", "icon": "fa-concierge-bell" },
-  { "name": "مستحضرات التجميل", "icon": "fa-magic" },
-  { "name": "معدات وعدد", "icon": "fa-tools" },
-  { "name": "الكترونيات", "icon": "fa-tv" },
-  { "name": "مصاعد", "icon": "fa-elevator" },
-  { "name": "اثاث ومطابخ", "icon": "fa-chair" },
-  { "name": "صناعة المسامير", "icon": "fa-screwdriver-wrench" },
-  { "name": "عطارة", "icon": "fa-leaf" },
-  { "name": "حلويات", "icon": "fa-candy-cane" },
-  { "name": "منظفات", "icon": "fa-pump-soap" },
-  { "name": "مصنع ملابس", "icon": "fa-industry" },
-  { "name": "مصنع بلاستيك", "icon": "fa-recycle" },
-  { "name": "مصنع اثاث", "icon": "fa-couch" },
-  { "name": "مصنع مواد غذائية", "icon": "fa-apple-alt" },
-  { "name": "مصنع حديد", "icon": "fa-hammer" },
-  { "name": "مصنع نسيج", "icon": "fa-thread" },
-  { "name": "مصنع الصابون", "icon": "fa-soap" },
-  { "name": "مصنع ورق", "icon": "fa-scroll" },
-  { "name": "تجهيزات فنادق", "icon": "fa-bed" },
-  { "name": "اجهزة طبية", "icon": "fa-stethoscope" },
-  { "name": "معمل تحاليل", "icon": "fa-vial" },
-  { "name": "مصنع مستلزمات أطفال", "icon": "fa-baby" },
-  { "name": "مصنع ملابس أطفال", "icon": "fa-child" },
-  { "name": "أدوات صحية", "icon": "fa-toilet" },
-  { "name": "استيراد وتصدير", "icon": "fa-globe" },
-  { "name": "مستلزمات مصانع", "icon": "fa-industry" },
-  { "name": "ادارة مجموعة صيدليات", "icon": "fa-pills" },
-  { "name": "تجهيزات صالات أفراح", "icon": "fa-church" }
+ {
+  "name": "الاثاث والديكور",
+  "icon": "fa-couch",
+  "customers": [
+    {
+      "name": "Living Mix",
+      "depNumbers": 3,
+      "activity": "الأثاث والديكور",
+      "place": ["القاهرة الجديدة"]
+    },
+    {
+      "name": "C & A for furniture and outdoor",
+      "depNumbers": 1,
+      "activity": "الأثاث والديكور",
+      "place": ["الاسكندرية"]
+    },
+    {
+      "name": "الشركة المصرية الاوروبية",
+      "depNumbers": 1,
+      "activity": "الأثاث",
+      "place": ["مدينة نصر"]
+    },
+    {
+      "name": "رؤية للاثاث المكتبي",
+      "depNumbers": 1,
+      "activity": "اثاث",
+      "place": ["المنوفية"]
+    },
+    {
+      "name": "look &like شركة",
+      "depNumbers": 1,
+      "activity": "اثاث ومطابخ",
+      "place": ["مصر الجديدة"]
+    }
+  ]
+},
+  {
+  "name": "الدراجات والادوات الرياضية",
+  "icon": "fa-bicycle",
+  "customers": [
+    {
+      "name": "رالي للدراجات",
+      "depNumbers": 1,
+      "activity": "الدراجات والادوات الرياضية",
+      "place": ["مدينة نصر"]
+    },
+    {
+      "name": "معرض سبورتس هاوس",
+      "depNumbers": 1,
+      "activity": "الدراجات والادوات الرياضية",
+      "place": ["مصر الجديدة"]
+    },
+    {
+      "name": "شركة ويلز للدراجات",
+      "depNumbers": 1,
+      "activity": "الدراجات والادوات الرياضية",
+      "place": ["النزهة"]
+    },
+    {
+      "name": "أوليمبيك سبورت",
+      "depNumbers": 1,
+      "activity": "الدراجات والادوات الرياضية",
+      "place": ["المرج"]
+    },
+    {
+      "name": "المتحده للادوات الرياضيه",
+      "depNumbers": 1,
+      "activity": "الدراجات والادوات الرياضية",
+      "place": ["المرج"]
+    }
+  ]
+}
+,
+  {
+  "name": "الحديد ومواد البناء",
+  "icon": "fa-tools",
+  "customers": [
+    {
+      "name": "شركة الهلال لمواد البناء",
+      "depNumbers": 1,
+      "activity": "الحديد ومواد البناء",
+      "place": ["المرج"]
+    },
+    {
+      "name": "مؤسسة العمدة لمواد البناء",
+      "depNumbers": 1,
+      "activity": "الحديد ومواد البناء",
+      "place": ["السلام"]
+    },
+    {
+      "name": "شركة العروبة للتجارة والتوزيع",
+      "depNumbers": 1,
+      "activity": "الحديد ومواد البناء",
+      "place": ["شبرا الخيمة"]
+    },
+    {
+      "name": "مؤسسة ال البيت لمواد البناء",
+      "depNumbers": 1,
+      "activity": "الحديد ومواد البناء",
+      "place": ["عين شمس"]
+    },
+    {
+      "name": "شركة الحمد لمواد البناء",
+      "depNumbers": 1,
+      "activity": "الحديد ومواد البناء",
+      "place": ["العاشر من رمضان"]
+    }
+  ]
+}
+,
+  {
+  "name": "السيراميك والبورسلين",
+  "icon": "fa-border-all",
+  "customers": [
+    {
+      "name": "شركة الجوهرة للسيراميك",
+      "depNumbers": 1,
+      "activity": "السيراميك والبورسلين",
+      "place": ["المطرية"]
+    },
+    {
+      "name": "سراميك كليوباترا",
+      "depNumbers": 1,
+      "activity": "السيراميك والبورسلين",
+      "place": ["عين شمس"]
+    },
+    {
+      "name": "سيراميكا الأمير",
+      "depNumbers": 1,
+      "activity": "السيراميك والبورسلين",
+      "place": ["شبرا"]
+    },
+    {
+      "name": "شركة رويال للسيراميك",
+      "depNumbers": 1,
+      "activity": "السيراميك والبورسلين",
+      "place": ["العاشر من رمضان"]
+    },
+    {
+      "name": "شركة سيراميكا كليوباترا جروب",
+      "depNumbers": 1,
+      "activity": "السيراميك والبورسلين",
+      "place": ["المعادي"]
+    }
+  ]
+}
+,
+{
+  "name": "دهانات وديكورات",
+  "icon": "fa-paint-roller",
+  "customers": [
+    {
+      "name": "شركة الدولية للدهانات والديكور",
+      "depNumbers": 1,
+      "activity": "دهانات وديكورات",
+      "place": ["الساحل"]
+    },
+    {
+      "name": "مصنع MTC للدهانات الحديثة",
+      "depNumbers": 1,
+      "activity": "دهانات وديكورات",
+      "place": ["مصر الجديدة"]
+    },
+    {
+      "name": "النجار لمواد الدهانات",
+      "depNumbers": 1,
+      "activity": "دهانات وديكورات",
+      "place": ["الساحل"]
+    },
+    {
+      "name": "معرض GLC",
+      "depNumbers": 1,
+      "activity": "دهانات وديكورات",
+      "place": ["المطرية"]
+    },
+    {
+      "name": "شركة العبور لصناعة الدهانات الحديثة",
+      "depNumbers": 1,
+      "activity": "دهانات وديكورات",
+      "place": ["المطرية"]
+    },
+    {
+      "name": "مؤسسة النور للتوريدات العمومية",
+      "depNumbers": 1,
+      "activity": "دهانات وديكورات",
+      "place": ["المرج"]
+    },
+    {
+      "name": "شركة بيكو للاستيراد والتصدير",
+      "depNumbers": 1,
+      "activity": "دهانات وديكورات",
+      "place": ["شبرا الخيمة"]
+    },
+    {
+      "name": "شركة ديزاينز جاليري للتشطيبات والديكور",
+      "depNumbers": 1,
+      "activity": "دهانات وديكورات",
+      "place": ["مصر الجديدة"]
+    },
+    {
+      "name": "شركة سان ماركو للدهانات",
+      "depNumbers": 1,
+      "activity": "دهانات وديكورات",
+      "place": ["العاشر من رمضان"]
+    },
+    {
+      "name": "المركز الهندسي للتوريدات والديكور",
+      "depNumbers": 1,
+      "activity": "دهانات وديكورات",
+      "place": ["عين شمس"]
+    },
+    {
+      "name": "الدهانات الحديثة",
+      "depNumbers": 1,
+      "activity": "دهانات وديكورات",
+      "place": ["المرج"]
+    }
+  ]
+},
+{
+  "name": "مستلزمات طبية",
+  "icon": "fa-heart-pulse",
+  "customers": [
+    {
+      "name": "شركة ميديكا للمستلزمات الطبية",
+      "depNumbers": 1,
+      "activity": "مستلزمات طبية",
+      "place": ["شبرا"]
+    },
+    {
+      "name": "الرحمة للمستلزمات الطبية",
+      "depNumbers": 1,
+      "activity": "مستلزمات طبية",
+      "place": ["المطرية"]
+    },
+    {
+      "name": "الشركة المتحدة للمستلزمات",
+      "depNumbers": 1,
+      "activity": "مستلزمات طبية",
+      "place": ["النزهة"]
+    },
+    {
+      "name": "شركة السلامة للتجهيزات الطبية",
+      "depNumbers": 1,
+      "activity": "مستلزمات طبية",
+      "place": ["عين شمس"]
+    },
+    {
+      "name": "سنتر العابد للمستلزمات الطبية",
+      "depNumbers": 1,
+      "activity": "مستلزمات طبية",
+      "place": ["المعادي"]
+    }
+  ]
+}
+,
+  {
+  "name": "مراكز طبية",
+  "icon": "fa-stethoscope",
+  "customers": [
+    {
+      "name": "مركز الفاروق الطبى",
+      "depNumbers": 1,
+      "activity": "مركز طبي",
+      "place": ["السلام"]
+    },
+    {
+      "name": "مركز الحياة الطبى",
+      "depNumbers": 1,
+      "activity": "مركز طبي",
+      "place": ["النزهة"]
+    },
+    {
+      "name": "مركز دار الحكمة الطبى",
+      "depNumbers": 1,
+      "activity": "مركز طبي",
+      "place": ["عين شمس"]
+    },
+    {
+      "name": "مركز التقوى الطبى",
+      "depNumbers": 1,
+      "activity": "مركز طبي",
+      "place": ["المطرية"]
+    },
+    {
+      "name": "مركز دار الشفاء",
+      "depNumbers": 1,
+      "activity": "مركز طبي",
+      "place": ["المرج"]
+    }
+  ]
+}
+,
+  {
+  "name": "مستشفيات",
+  "icon": "fa-hospital",
+  "customers": [
+    {
+      "name": "مستشفى النور المحمدى",
+      "depNumbers": 1,
+      "activity": "مستشفيات",
+      "place": ["عين شمس"]
+    },
+    {
+      "name": "مستشفى التوفيقية",
+      "depNumbers": 1,
+      "activity": "مستشفيات",
+      "place": ["شبرا"]
+    },
+    {
+      "name": "مستشفى العاشر",
+      "depNumbers": 1,
+      "activity": "مستشفيات",
+      "place": ["العاشر من رمضان"]
+    },
+    {
+      "name": "مستشفى النهضة",
+      "depNumbers": 1,
+      "activity": "مستشفيات",
+      "place": ["المعادي"]
+    },
+    {
+      "name": "مستشفى دار الفؤاد",
+      "depNumbers": 1,
+      "activity": "مستشفيات",
+      "place": ["مدينة نصر"]
+    }
+  ]
+}
+,
+ {
+  "name": "زجاج السيارات",
+  "icon": "fa-car",
+  "customers": [
+    {
+      "name": "شركة العالمية لزجاج السيارات",
+      "depNumbers": 1,
+      "activity": "زجاج السيارات",
+      "place": ["المرج"]
+    },
+    {
+      "name": "المتحدة لزجاج السيارات",
+      "depNumbers": 1,
+      "activity": "زجاج السيارات",
+      "place": ["شبرا"]
+    },
+    {
+      "name": "الريان لزجاج السيارات",
+      "depNumbers": 1,
+      "activity": "زجاج السيارات",
+      "place": ["المطرية"]
+    }
+  ]
+}
+,
+  {
+  "name": "صيانة السيارات",
+  "icon": "fa-tools",
+  "customers": [
+    {
+      "name": "مركز الزهراء لصيانة السيارات",
+      "depNumbers": 1,
+      "activity": "صيانة السيارات",
+      "place": ["مدينة نصر"]
+    },
+    {
+      "name": "مركز الأندلس لصيانة السيارات",
+      "depNumbers": 1,
+      "activity": "صيانة السيارات",
+      "place": ["المرج"]
+    },
+    {
+      "name": "مركز النور لصيانة السيارات",
+      "depNumbers": 1,
+      "activity": "صيانة السيارات",
+      "place": ["عين شمس"]
+    }
+  ]
+}
+,
+  {
+  "name": "نانو سيراميك للسيارات",
+  "icon": "fa-spray-can",
+  "customers": [
+    {
+      "name": "شركة نانو بروتكشن",
+      "depNumbers": 1,
+      "activity": "نانو سيراميك للسيارات",
+      "place": ["التجمع"]
+    },
+    {
+      "name": "مركز نانو سيراميك اكسبريس",
+      "depNumbers": 1,
+      "activity": "نانو سيراميك للسيارات",
+      "place": ["مدينة نصر"]
+    }
+  ]
+}
+,
+ {
+  "name": "كماليات السيارات",
+  "icon": "fa-gift",
+  "customers": [
+    {
+      "name": "شركة الزهراء لكماليات السيارات",
+      "depNumbers": 1,
+      "activity": "كماليات السيارات",
+      "place": ["عين شمس"]
+    },
+    {
+      "name": "الوليد لكماليات السيارات",
+      "depNumbers": 1,
+      "activity": "كماليات السيارات",
+      "place": ["المرج"]
+    },
+    {
+      "name": "العربية لكماليات السيارات",
+      "depNumbers": 1,
+      "activity": "كماليات السيارات",
+      "place": ["شبرا"]
+    }
+  ]
+}
+,
+  {
+  "name": "مركز صيانة سيارات",
+  "icon": "fa-wrench",
+  "customers": [
+    {
+      "name": "مركز الخليج لصيانة السيارات",
+      "depNumbers": 1,
+      "activity": "مركز صيانة سيارات",
+      "place": ["مدينة نصر"]
+    },
+    {
+      "name": "مركز العروبة لصيانة السيارات",
+      "depNumbers": 1,
+      "activity": "مركز صيانة سيارات",
+      "place": ["المرج"]
+    }
+  ]
+}
+,
+  {
+  "name": "الموازين",
+  "icon": "fa-balance-scale",
+  "customers": [
+    {
+      "name": "شركة الحرمين للموازين",
+      "depNumbers": 1,
+      "activity": "الموازين",
+      "place": ["العتبة"]
+    },
+    {
+      "name": "مؤسسة الأمان للموازين",
+      "depNumbers": 1,
+      "activity": "الموازين",
+      "place": ["السيدة"]
+    }
+  ]
+}
+,
+ {
+  "name": "الكافتيريات والمطاعم",
+  "icon": "fa-utensils",
+  "customers": [
+    {
+      "name": "مطعم البرنس",
+      "depNumbers": 1,
+      "activity": "الكافتيريات والمطاعم",
+      "place": ["إمبابة"]
+    },
+    {
+      "name": "كافتيريا الونش",
+      "depNumbers": 1,
+      "activity": "الكافتيريات والمطاعم",
+      "place": ["شبرا"]
+    }
+  ]
+}
+,
+ {
+  "name": "مكتبات",
+  "icon": "fa-book",
+  "customers": [
+    {
+      "name": "مكتبة الفرج",
+      "depNumbers": 1,
+      "activity": "مكتبات",
+      "place": ["العتبة"]
+    },
+    {
+      "name": "مكتبة الشرق الأوسط",
+      "depNumbers": 1,
+      "activity": "مكتبات",
+      "place": ["رمسيس"]
+    }
+  ]
+}
+,
+  {
+  "name": "اكسسوارات حريمي",
+  "icon": "fa-ring",
+  "customers": [
+    {
+      "name": "شركة رويال للأكسسوارات",
+      "depNumbers": 1,
+      "activity": "اكسسوارات حريمي",
+      "place": ["العتبة"]
+    },
+    {
+      "name": "اكسسوارات المحلة",
+      "depNumbers": 1,
+      "activity": "اكسسوارات حريمي",
+      "place": ["شبرا"]
+    }
+  ]
+}
+,
+  {
+  "name": "مستلزمات فنادق",
+  "icon": "fa-concierge-bell",
+  "customers": [
+    {
+      "name": "شركة النور لمستلزمات الفنادق",
+      "depNumbers": 1,
+      "activity": "مستلزمات فنادق",
+      "place": ["وسط البلد"]
+    },
+    {
+      "name": "الصفا لمستلزمات الفنادق",
+      "depNumbers": 1,
+      "activity": "مستلزمات فنادق",
+      "place": ["مدينة نصر"]
+    }
+  ]
+}
+,
+  {
+  "name": "مستحضرات التجميل",
+  "icon": "fa-magic",
+  "customers": [
+    {
+      "name": "شركة الملكة لمستحضرات التجميل",
+      "depNumbers": 1,
+      "activity": "مستحضرات التجميل",
+      "place": ["العباسية"]
+    },
+    {
+      "name": "شركة الجمال الفريد",
+      "depNumbers": 1,
+      "activity": "مستحضرات التجميل",
+      "place": ["العاشر"]
+    }
+  ]
+}
+,
+  {
+  "name": "معدات وعدد",
+  "icon": "fa-tools",
+  "customers": [
+    {
+      "name": "مؤسسة النور للمعدات الصناعية",
+      "depNumbers": 1,
+      "activity": "معدات وعدد",
+      "place": ["السبتية"]
+    },
+    {
+      "name": "شركة الدسوقي للمعدات",
+      "depNumbers": 1,
+      "activity": "معدات وعدد",
+      "place": ["شبرا"]
+    }
+  ]
+}
+,
+  {
+  "name": "الكترونيات",
+  "icon": "fa-tv",
+  "customers": [
+    {
+      "name": "شركة النور للإلكترونيات",
+      "depNumbers": 1,
+      "activity": "الكترونيات",
+      "place": ["العتبة"]
+    },
+    {
+      "name": "الكترونيات المدينة",
+      "depNumbers": 1,
+      "activity": "الكترونيات",
+      "place": ["شبرا"]
+    }
+  ]
+}
+,
+ {
+  "name": "مصاعد",
+  "icon": "fa-elevator",
+  "customers": [
+    {
+      "name": "شركة أمان للمصاعد",
+      "depNumbers": 1,
+      "activity": "مصاعد",
+      "place": ["مدينة نصر"]
+    },
+    {
+      "name": "المصرية للمصاعد الكهربائية",
+      "depNumbers": 1,
+      "activity": "مصاعد",
+      "place": ["المعادي"]
+    }
+  ]
+}
+,{
+  "name": "اثاث ومطابخ",
+  "icon": "fa-chair",
+  "customers": [
+    {
+      "name": "معرض لمسة للأثاث والمطابخ",
+      "depNumbers": 1,
+      "activity": "اثاث ومطابخ",
+      "place": ["الساحل"]
+    },
+    {
+      "name": "شركة مودي للأثاث",
+      "depNumbers": 1,
+      "activity": "اثاث ومطابخ",
+      "place": ["شبرا"]
+    }
+  ]
+}
+,{
+  "name": "صناعة المسامير",
+  "icon": "fa-screwdriver-wrench",
+  "customers": [
+    {
+      "name": "مصنع الفتح للمسامير",
+      "depNumbers": 1,
+      "activity": "صناعة المسامير",
+      "place": ["شبرا الخيمة"]
+    },
+    {
+      "name": "شركة المصرية للمسامير",
+      "depNumbers": 1,
+      "activity": "صناعة المسامير",
+      "place": ["العبور"]
+    }
+  ]
+}
+,
+{
+  "name": "عطارة",
+  "icon": "fa-leaf",
+  "customers": [
+    {
+      "name": "عطارة الحاج رجب",
+      "depNumbers": 1,
+      "activity": "عطارة",
+      "place": ["العتبة"]
+    },
+    {
+      "name": "محلات العطار",
+      "depNumbers": 1,
+      "activity": "عطارة",
+      "place": ["شبرا"]
+    }
+  ]
+}
+,
+{
+  "name": "حلويات",
+  "icon": "fa-candy-cane",
+  "customers": [
+    {
+      "name": "حلواني النيل",
+      "depNumbers": 1,
+      "activity": "حلويات",
+      "place": ["وسط البلد"]
+    },
+    {
+      "name": "حلواني تسيباس",
+      "depNumbers": 1,
+      "activity": "حلويات",
+      "place": ["مصر الجديدة"]
+    }
+  ]
+},
+  {
+  "name": "منظفات",
+  "icon": "fa-pump-soap",
+  "customers": [
+    {
+      "name": "شركة كلين للمنظفات",
+      "depNumbers": 1,
+      "activity": "منظفات",
+      "place": ["المرج"]
+    },
+    {
+      "name": "الصفا للمنظفات",
+      "depNumbers": 1,
+      "activity": "منظفات",
+      "place": ["عين شمس"]
+    }
+  ]
+}
+,
+ {
+  "name": "مصنع ملابس",
+  "icon": "fa-industry",
+  "customers": [
+    {
+      "name": "مصنع النصر للملابس",
+      "depNumbers": 1,
+      "activity": "مصنع ملابس",
+      "place": ["شبرا الخيمة"]
+    },
+    {
+      "name": "الريادة لصناعة الملابس",
+      "depNumbers": 1,
+      "activity": "مصنع ملابس",
+      "place": ["العاشر من رمضان"]
+    }
+  ]
+}
+,
+  {
+  "name": "مصنع بلاستيك",
+  "icon": "fa-recycle",
+  "customers": [
+    {
+      "name": "مصنع المستقبل للبلاستيك",
+      "depNumbers": 1,
+      "activity": "مصنع بلاستيك",
+      "place": ["العبور"]
+    },
+    {
+      "name": "شركة نور بلاست",
+      "depNumbers": 1,
+      "activity": "مصنع بلاستيك",
+      "place": ["شبرا الخيمة"]
+    }
+  ]
+}
+,
+  {
+  "name": "مصنع اثاث",
+  "icon": "fa-couch",
+  "customers": [
+    {
+      "name": "مصنع الديب للأثاث",
+      "depNumbers": 1,
+      "activity": "مصنع اثاث",
+      "place": ["دمياط"]
+    },
+    {
+      "name": "مصنع مودرن هاوس",
+      "depNumbers": 1,
+      "activity": "مصنع اثاث",
+      "place": ["المنصورة"]
+    }
+  ]
+}
+,
+  {
+  "name": "مصنع مواد غذائية",
+  "icon": "fa-apple-alt",
+  "customers": [
+    {
+      "name": "مصنع الشروق للصناعات الغذائية",
+      "depNumbers": 1,
+      "activity": "مصنع مواد غذائية",
+      "place": ["العاشر من رمضان"]
+    },
+    {
+      "name": "شركة الرضا للصناعات الغذائية",
+      "depNumbers": 1,
+      "activity": "مصنع مواد غذائية",
+      "place": ["العبور"]
+    }
+  ]
+}
+,
+  {
+  "name": "مصنع حديد",
+  "icon": "fa-hammer",
+  "customers": [
+    {
+      "name": "مصنع حديد المصريين",
+      "depNumbers": 1,
+      "activity": "مصنع حديد",
+      "place": ["السادات"]
+    },
+    {
+      "name": "مصنع بشاي للصلب",
+      "depNumbers": 1,
+      "activity": "مصنع حديد",
+      "place": ["العاشر من رمضان"]
+    }
+  ]
+}
+,
+  {
+  "name": "مصنع نسيج",
+  "icon": "fa-thread",
+  "customers": [
+    {
+      "name": "مصنع الأمل للنسيج",
+      "depNumbers": 1,
+      "activity": "مصنع نسيج",
+      "place": ["المحلة الكبرى"]
+    },
+    {
+      "name": "نساجون مصريون",
+      "depNumbers": 1,
+      "activity": "مصنع نسيج",
+      "place": ["العاشر من رمضان"]
+    }
+  ]
+}
+,
+  {
+  "name": "مصنع الصابون",
+  "icon": "fa-soap",
+  "customers": [
+    {
+      "name": "شركة النور للصابون",
+      "depNumbers": 1,
+      "activity": "مصنع الصابون",
+      "place": ["المنوفية"]
+    },
+    {
+      "name": "صن لايت للصابون",
+      "depNumbers": 1,
+      "activity": "مصنع الصابون",
+      "place": ["شبرا الخيمة"]
+    }
+  ]
+}
+,
+ {
+  "name": "مصنع ورق",
+  "icon": "fa-scroll",
+  "customers": [
+    {
+      "name": "مصنع الرواد للورق",
+      "depNumbers": 1,
+      "activity": "مصنع ورق",
+      "place": ["6 أكتوبر"]
+    },
+    {
+      "name": "الشركة المصرية لصناعة الورق",
+      "depNumbers": 1,
+      "activity": "مصنع ورق",
+      "place": ["بورسعيد"]
+    }
+  ]
+}
+,
+  {
+  "name": "تجهيزات فنادق",
+  "icon": "fa-bed",
+  "customers": [
+    {
+      "name": "شركة جراند لتجهيز الفنادق",
+      "depNumbers": 1,
+      "activity": "تجهيزات فنادق",
+      "place": ["القاهرة"]
+    },
+    {
+      "name": "الهلال لتجهيز الفنادق",
+      "depNumbers": 1,
+      "activity": "تجهيزات فنادق",
+      "place": ["الإسكندرية"]
+    }
+  ]
+}
+,
+ {
+  "name": "اجهزة طبية",
+  "icon": "fa-stethoscope",
+  "customers": [
+    {
+      "name": "ميديكال تكنولوجي",
+      "depNumbers": 1,
+      "activity": "اجهزة طبية",
+      "place": ["مدينة نصر"]
+    },
+    {
+      "name": "شركة الحياة للأجهزة الطبية",
+      "depNumbers": 1,
+      "activity": "اجهزة طبية",
+      "place": ["المهندسين"]
+    }
+  ]
+}
+,
+  {
+  "name": "معمل تحاليل",
+  "icon": "fa-vial",
+  "customers": [
+    {
+      "name": "معمل المختبر",
+      "depNumbers": 1,
+      "activity": "معمل تحاليل",
+      "place": ["الهرم"]
+    },
+    {
+      "name": "معمل البرج",
+      "depNumbers": 1,
+      "activity": "معمل تحاليل",
+      "place": ["مصر الجديدة"]
+    }
+  ]
+}
+,
+ {
+  "name": "مصنع مستلزمات أطفال",
+  "icon": "fa-baby",
+  "customers": [
+    {
+      "name": "بيبي كير لصناعة مستلزمات الأطفال",
+      "depNumbers": 1,
+      "activity": "مصنع مستلزمات أطفال",
+      "place": ["العاشر من رمضان"]
+    },
+    {
+      "name": "مصنع بيبي لاين",
+      "depNumbers": 1,
+      "activity": "مصنع مستلزمات أطفال",
+      "place": ["العبور"]
+    }
+  ]
+}
+,
+  {
+  "name": "مصنع ملابس أطفال",
+  "icon": "fa-child",
+  "customers": [
+    {
+      "name": "مصنع توم آند جيري",
+      "depNumbers": 1,
+      "activity": "مصنع ملابس أطفال",
+      "place": ["شبرا الخيمة"]
+    },
+    {
+      "name": "بيبي فاشون",
+      "depNumbers": 1,
+      "activity": "مصنع ملابس أطفال",
+      "place": ["طنطا"]
+    }
+  ]
+}
+,
+ {
+  "name": "أدوات صحية",
+  "icon": "fa-toilet",
+  "customers": [
+    {
+      "name": "شركة المهندس للأدوات الصحية",
+      "depNumbers": 1,
+      "activity": "أدوات صحية",
+      "place": ["العتبة"]
+    },
+    {
+      "name": "بيت الأدوات الصحية",
+      "depNumbers": 1,
+      "activity": "أدوات صحية",
+      "place": ["حلوان"]
+    }
+  ]
+}
+,
+ {
+  "name": "استيراد وتصدير",
+  "icon": "fa-globe",
+  "customers": [
+    {
+      "name": "الشركة الدولية للاستيراد والتصدير",
+      "depNumbers": 1,
+      "activity": "استيراد وتصدير",
+      "place": ["الزيتون"]
+    },
+    {
+      "name": "النور للاستيراد",
+      "depNumbers": 1,
+      "activity": "استيراد وتصدير",
+      "place": ["المعادي"]
+    }
+  ]
+}
+,
+  {
+  "name": "مستلزمات مصانع",
+  "icon": "fa-industry",
+  "customers": [
+    {
+      "name": "العليمي للاستيراد والتصدير ",
+      "depNumbers": 1,
+      "activity": "مستلزمات مصانع",
+      "place": ["العاشر من رمضان"]
+    }
+  ]
+}
+,
+  {
+  "name": "ادارة مجموعة صيدليات",
+  "icon": "fa-pills",
+  "customers": [
+    {
+      "name": "شركة ريتش لادارة الصيدليات ",
+      "depNumbers": 1,
+      "activity": "ادارة مجموعة صيدليات",
+      "place": ["مصر الجديدة"]
+    }
+  ]
+}
+,{
+  "name": " قاعات أفراح",
+  "icon": "fa-church",
+  "customers": [
+   {
+    "name":" CITY HALL",
+    "depNumbers":1,
+    "activity":" قاعات أفراح",
+    "place":["الإسماعيلية "]
+   }
+  ]
+}
+
 
 
 ]
