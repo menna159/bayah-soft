@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         section.innerHTML = `
           <h2 class="accordion-header" id="heading${index}">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#${collapseId}" aria-expanded="false" aria-controls="${collapseId}">
-              <i class="fa ${dep.icon || 'fa-question'} text-primary me-2"></i> ${dep.name}
+             ${dep.name}
             </button>
           </h2>
           <div id="${collapseId}" class="accordion-collapse collapse" aria-labelledby="heading${index}" data-bs-parent="#departmentAccordion">
