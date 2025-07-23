@@ -1,4 +1,11 @@
 /********** Template CSS **********/
+* {
+  box-sizing: border-box;
+}
+html {
+  overflow-x: hidden;
+  width: 100%;
+}
 
 :root {
     --primary: #06BBCC;
@@ -257,11 +264,16 @@
     background: var(--primary);
     z-index: -1;
 }
-.owl-carousel {
-  width: 100%;
+.owl-carousel, .owl-carousel-item {
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow: hidden !important;
 }
-.owl-carousel-item {
-  overflow: hidden;
+.owl-carousel-item img {
+  width: 100% !important;
+  height: auto;
+  object-fit: cover;
+  display: block;
 }
 .section-title.text-start::before {
     width: calc(100% + 40px);
@@ -520,3 +532,14 @@
       color: var(--primary);
       cursor: pointer;
     }
+    @media (max-width: 768px) {
+  .section-title::before,
+  .section-title::after {
+    width: 100%;
+    left: 0;
+  }
+
+  .navbar .nav-link {
+    margin-right: 0;
+  }
+}
