@@ -257,6 +257,9 @@
     background: var(--primary);
     z-index: -1;
 }
+.owl-carousel {
+  width: 100%;
+}
 
 .section-title.text-start::before {
     width: calc(100% + 40px);
