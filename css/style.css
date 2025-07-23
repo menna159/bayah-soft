@@ -260,7 +260,9 @@
 .owl-carousel {
   width: 100%;
 }
-
+.owl-carousel-item {
+  overflow: hidden;
+}
 .section-title.text-start::before {
     width: calc(100% + 40px);
     left: 0;
