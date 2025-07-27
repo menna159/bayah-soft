@@ -11,6 +11,7 @@ html {
     --primary: #06BBCC;
     --light: #F0FBFC;
     --dark: #181d38;
+
 }
     body {
       background-color: #f8f9fa;
@@ -542,4 +543,33 @@ html {
   .navbar .nav-link {
     margin-right: 0;
   }
+}
+.customContainer{
+    width:10%;
+    height: 20%;
+    border-radius: 15rem;
+}
+.department-card{
+      font-family: 'Cairo', sans-serif;
+
+}
+.department-card:hover {
+  transform: translateY(-30px);
+  transition: 0.3s ease;
+}
+.department-card .card-body {
+  padding: 1.5rem;
+ 
+}
+.bg-card-dark{
+    background-color: #209aa5;
+}
+.bg-card-light{
+    background-color: #7ec6cd;
+}
+.text-card-dark{
+color: #1d858f;
+}
+.text-card-light{
+color: #b4e6eb;
 }

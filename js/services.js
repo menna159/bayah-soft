@@ -11,35 +11,46 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(res => res.json())
     .then(data => {
       data.forEach((dep, index) => {
-        const collapseId = `collapse${index}`;
-
-        // Build customers list
-        const customersList = (dep.customers || []).map(c => {
-          const name = typeof c === 'string' ? c : c.name || '';
-          const activity = typeof c === 'object' && c.activity ? `<br><small class="text-muted">${c.activity}</small>` : '';
-          return `<li class="bg-light p-2 rounded">${name}${activity}</li>`;
-        }).join('');
-
         const section = document.createElement('div');
-        section.className = 'accordion-item mb-3';
+        section.className = 'card h-100 shadow-sm department-card text-center border-0';
+        section.style.cursor = 'pointer';
+         
+        // Apply background & text color
+        if(index==data.length-1){
+          section.style.borderRadius='1.5rem';
+          section.classList.add('bg-card-dark');
+        } 
+       else if (index % 4 === 0) {
+          section.classList.add('bg-card-dark');
+          section.style.borderTopLeftRadius = '1.5rem';
+          section.style.borderBottomLeftRadius = '1.5rem';
+        } else if (index % 4 === 1||index%4===2) {
+          section.classList.add('bg-card-light');
+          section.style.borderRadius = '0';
+        } 
+        else {
+          section.classList.add('bg-card-dark');
+          section.style.borderTopRightRadius = '1.5rem';
+          section.style.borderBottomRightRadius = '1.5rem';
+        }
+
+        // Click handler
+        section.onclick = () => openWindow(dep.name.replace(/'/g, "\\'"));
+
+        // Card content
         section.innerHTML = `
-          <h2 class="accordion-header" id="heading${index}">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#${collapseId}" aria-expanded="false" aria-controls="${collapseId}">
-             ${dep.name}
-            </button>
-          </h2>
-          <div id="${collapseId}" class="accordion-collapse collapse" aria-labelledby="heading${index}" data-bs-parent="#departmentAccordion">
-            <div class="accordion-body">
-              <button class="btn btn-outline-primary mb-3" onclick="openWindow('${dep.name.replace(/'/g, "\\'")}')">
-                عرض عملاء هذا القسم
-              </button>
-              <ul class="list-unstyled row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2">
-                ${customersList || '<li class="text-muted">لا يوجد عملاء</li>'}
-              </ul>
-            </div>
+          <div class="card-body py-4">
+            <h5 class="card-title  ${index%4!==1&&index%4!==2?'text-card-light':"text-card-dark"} fw-semibold">
+              ${dep.name}
+            </h5>
           </div>
         `;
-        container.appendChild(section);
+
+        // Wrap in Bootstrap column
+        const col = document.createElement('div');
+        col.className = 'col-12 col-sm-6 col-md-3 mb-4';
+        col.appendChild(section);
+        container.appendChild(col);
       });
 
       spinner.classList.remove('show');
