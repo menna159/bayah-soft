@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Card content
         section.innerHTML = `
           <div class="card-body py-4">
-            <h5 class="card-title  ${index%4!==1&&index%4!==2?'text-card-light':"text-card-dark"} fw-semibold">
+            <h5 class="card-title  ${index%4!==1&&index%4!==2?'text-light':"text-card-dark"} fw-semibold">
               ${dep.name}
             </h5>
           </div>
