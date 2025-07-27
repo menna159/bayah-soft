@@ -6,19 +6,31 @@ html {
   overflow-x: hidden;
   width: 100%;
 }
-
 :root {
-    --primary: #06BBCC;
+    --primary: #1d838c;
     --light: #F0FBFC;
     --dark: #181d38;
 
 }
     body {
       background-color: #f8f9fa;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Manrope', sans-serif !important;
      overflow-x: hidden;
 
     }
+    .title-header{
+        letter-spacing: 0.6rem !important;
+    }
+  h1.title-header,
+h2.title-header,
+h3.title-header,
+h4.title-header,
+h5.title-header,
+h6.title-header {
+  font-family: 'Henny Penny', cursive !important;
+}
+
+
 .fw-medium {
     font-weight: 600 !important;
 }
@@ -241,7 +253,7 @@ html {
 .section-title {
     position: relative;
     display: inline-block;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 .section-title::before {
