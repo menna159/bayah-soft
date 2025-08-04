@@ -101,8 +101,29 @@ h6.title-header {
     border-radius: 0px;
 }
 
-
+#contain-img {
+      display: none !important;
+      /* background-color: rgba(0, 0, 0, 0.8);  */
+      z-index: 9999
+      /* background-color: rgba(0, 0, 0, 0.8); */
+    }
+    #contain-img.d-flex {
+  display: flex !important;
+  flex-direction: column;
+}
 /*** Navbar ***/
+.bg-dark-opacity {
+  background-color: rgba(5, 38, 42, 0.9); /* #232c2d with 80% opacity */
+}
+
+.bg-light-opacity {
+  background-color: rgba(190, 214, 214, 0.4); 
+}
+.control-icon{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-size: 1.5rem 1.5rem;
+}
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
@@ -112,7 +133,7 @@ h6.title-header {
     margin-left: 8px;
 }
 
-.navbar-light .navbar-nav .nav-link {
+.navbar-dark .navbar-nav .nav-link {
     margin-right: 30px;
     padding: 25px 0;
     color: #FFFFFF;
@@ -121,33 +142,35 @@ h6.title-header {
     outline: none;
 }
 
-.navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .nav-link.active {
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
     color: var(--primary);
 }
-
+.nav-link{
+    color: #FFFFFF;
+}
 @media (max-width: 991.98px) {
-    .navbar-light .navbar-nav .nav-link  {
+    .navbar-dark .navbar-nav .nav-link  {
         margin-right: 0;
         padding: 10px 0;
     }
 
-    .navbar-light .navbar-nav {
+    .navbar-dark .navbar-nav {
         border-top: 1px solid #EEEEEE;
     }
 }
 
-.navbar-light .navbar-brand,
-.navbar-light a.btn {
+.navbar-dark .navbar-brand,
+.navbar-dark a.btn {
     height: 75px;
 }
 
-.navbar-light .navbar-nav .nav-link {
-    color: var(--dark);
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--light);
     font-weight: 500;
 }
 
-.navbar-light.sticky-top {
+.navbar-dark.sticky-top {
     top: -100px;
     transition: .5s;
 }
@@ -297,7 +320,9 @@ h6.title-header {
     width: calc(100% + 60px);
     left: 0;
 }
-
+.card{
+    cursor: pointer !important;
+}
 
 /*** Service ***/
 .service-item{
@@ -335,7 +360,9 @@ h6.title-header {
    
 }
 
-
+#accordion .card {
+  width: 300px;
+}
 /*** Categories & Courses ***/
 .category img,
 .course-item img {
