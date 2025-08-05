@@ -176,6 +176,11 @@ h6.title-header {
 }
 
 @media (min-width: 992px) {
+   nav.navbar .navbar-collapse .navbar-nav {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap-reverse !important;
+  }
     .navbar .nav-item .dropdown-menu {
         display: block;
         margin-top: 0;
