@@ -1,6 +1,6 @@
 function openWindow(departmentName) {
   localStorage.setItem('selectedDepartment', departmentName);
-  window.open('department.html', '_blank');
+window.location.href = 'department.html';
 }
 
 document.addEventListener('DOMContentLoaded', () => {
