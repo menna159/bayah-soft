@@ -185,11 +185,10 @@ h6.title-header {
     top: -100px;
     transition: .5s;
 }
-
 @media (min-width: 992px) {
    nav.navbar .navbar-collapse .navbar-nav {
     display: flex !important;
-    flex-direction: row !important;
+    flex-direction: row-reverse !important;
     flex-wrap: wrap-reverse !important;
   }
     .navbar .nav-item .dropdown-menu {
@@ -218,6 +217,11 @@ h6.title-header {
 
 /*** Header carousel ***/
 @media (max-width: 768px) {
+      nav.navbar .navbar-collapse .navbar-nav {
+    display: flex !important;
+    flex-direction: column;
+    flex-wrap: wrap-reverse !important;
+  }
     .header-carousel .owl-carousel-item {
         position: relative;
         min-height: 500px;
