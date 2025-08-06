@@ -77,6 +77,31 @@
             '<i class="bi bi-chevron-right"></i>'
         ]
     });
-
+    
 
 })(jQuery);
+function handleCardView(id){
+    var card=document.getElementById(id);
+    card.style.display='flex';
+    
+   }
+   function handleCardHide(id){
+        var card=document.getElementById(id);
+    card.style.display='none';
+    
+   }
+  function handleClick(source) {
+      const overlay = document.getElementById("contain-img");
+      const img = document.getElementById("scaled-img");
+      img.src = source;
+      overlay.classList.add('d-flex');
+      console.log(overlay.style.display);
+      
+      overlay.classList.add("d-flex");
+    }
+
+    function closeOverlay() {
+      const overlay = document.getElementById("contain-img");
+      overlay.style.display = "none";
+      overlay.classList.remove("d-flex");
+    }

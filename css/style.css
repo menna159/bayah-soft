@@ -115,6 +115,9 @@ h6.title-header {
 .bg-dark-opacity {
   background-color: rgba(5, 38, 42, 0.9); /* #232c2d with 80% opacity */
 }
+.bg-dark-opacity-carousel{
+  background-color: rgba(5, 38, 42, 0.7); /* #232c2d with 80% opacity */
+}
 
 .bg-light-opacity {
   background-color: rgba(190, 214, 214, 0.4); 
@@ -563,41 +566,6 @@ h6.title-header {
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     }
 
-    /* Floating Google Translate Button */
-    #google_translate_element {
-      position: fixed;
-      bottom: 20px;
-      left: 20px;
-      background-color: white;
-      padding: 6px 12px;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      z-index: 9999;
-    }
-    #google_translate_element select {
-      border: none;
-      background-color: transparent;
-      font-weight: bold;
-      color: #06BBCC;
-      cursor: pointer;
-    }
-    .gtranslate_wrapper {
-      position: fixed;
-      bottom: 20px;
-      left: 20px;
-      background-color: white;
-      padding: 8px 12px;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      z-index: 9999;
-    }
-    .gtranslate_wrapper select {
-      border: none;
-      background-color: transparent;
-      font-weight: bold;
-      color: var(--primary);
-      cursor: pointer;
-    }
     @media (max-width: 768px) {
   .section-title::before,
   .section-title::after {
