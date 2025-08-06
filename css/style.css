@@ -355,7 +355,7 @@ h6.title-header {
 .list-item span{
     width:1.5rem; 
     height:1.5rem;
-    background-color:#06BBCC;
+    background-color:var(--primary);
     border-radius:60%;
     display:inline-block;
     color: aliceblue;
@@ -368,7 +368,7 @@ h6.title-header {
 }
 .service-item:hover .list-item span{
   background-color: white !important;
-  color: #06BBCC !important;
+  color: rgba(5, 38, 42, 0.9) !important;
 }
 .service-item * {
     transition: .5s;
