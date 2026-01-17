@@ -80,6 +80,16 @@
     
 
 })(jQuery);
+// Navbar scroll effect
+window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('.navbar.sticky-top');
+  if(window.scrollY > 50) {
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+});
+
 function handleCardView(id){
     var card=document.getElementById(id);
     card.style.display='flex';

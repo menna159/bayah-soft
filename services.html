@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="utf-8">
@@ -37,33 +37,42 @@
 
   <!-- Navbar Start -->
  <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-dark-opacity navbar-dark shadow sticky-top p-0 mb-2 ">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-white title-header">BAYAH SOFT</h2>
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-               <a href="index.html" class="nav-item nav-link ">الرئيسية</a>
-                  <a href="customers.html" class="nav-item nav-link">عملائنا </a>
-                  <a href="services.html" class="nav-item nav-link active">الخدمات</a>
-                     <a href="contact.html" class="nav-item nav-link">تواصل معنا</a>
-            </div>
-        </div>
-    </nav>
+   <nav class="navbar navbar-expand-lg navbar-light  shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <img src="img/logo.ico" width="55" alt="Bayah Soft">
+      <span class="fw-bold text-primary">Bayah Soft</span>
+    </a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+   <div class="collapse navbar-collapse" id="navbarCollapse">
+  <ul class="navbar-nav fw-semibold"> <!-- أزل ms-auto -->
+    <li class="nav-item"><a class="nav-link" href="contact.html">تواصل معنا</a></li>
+        <li class="nav-item"><a class="nav-link active" href="services.html">الخدمات</a></li>
+
+        <li class="nav-item"><a class="nav-link" href="customers.html">عملاؤنا</a></li>
+
+        <li class="nav-item"><a class="nav-link " href="index.html">الرئيسية</a></li>
+
+  </ul>
+</div>
+
+  </div>
+</nav>
 <!-- Navbar End -->
 
 <!-- Navbar End -->
 
 
     <!-- Header Start -->
-    <div class="container-fluid bg-primary py-5 mb-5 page-header" >
-        <div class="container py-5">
+    <div class="container-fluid py-4 page-header" >
+        <div class="container py-2">
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center">
-                    <h1 class="display-3 text-white animated slideInDown">الخدمات</h1>
+                    <h1 class="display-5  text-primary animated slideInDown">الخدمات</h1>
                    
                 </div>
             </div>
@@ -103,6 +112,12 @@
           <h5 class="mb-3">ERP System</h5>
           
        <div class="list-item d-flex flex-row justify-content-center align-items-center">
+        <!-- Numbers Column -->
+  <div class="d-flex flex-column">
+    <span class="mb-2">1</span>
+    <span class="mb-2">2</span>
+    <span class="mb-2">3</span>
+  </div>
   <!-- Labels Column -->
   <div class="d-flex flex-column me-3 ">
     <p class="mb-2">بيع مباشر</p>
@@ -110,12 +125,7 @@
     <p class="mb-2">تصنيع</p>
   </div>
 
-  <!-- Numbers Column -->
-  <div class="d-flex flex-column">
-    <span class="mb-2">1</span>
-    <span class="mb-2">2</span>
-    <span class="mb-2">3</span>
-  </div>
+  
 </div>
 
         
@@ -148,40 +158,56 @@
 
     
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark-opacity text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <a class="btn btn-link" href="index.html">الرئيسية</a>
-                    <a class="btn btn-link" href="customers.html">عملائنا </a>
-                    <a class="btn btn-link" href="services.html">الخدمات</a>
-                    <a class="btn btn-link" href="contact.html">تواصل معنا</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">معلومات التواصل</h4><p class="mb-2 d-flex align-items-start">
-    <i class="fa fa-map-marker-alt me-2 mt-1"></i><p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>
-                        24 Mohammed Farid Abou Hadid, Al Hay as Sabea, Nasr City, Cairo Governorate 4441266</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>010 00960702</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>BayahSoft@gmail.com</p>
-                    <div class="d-flex pt-2">
-                       <a class="btn btn-outline-light btn-social" target="_blank" href="https://www.facebook.com/bayahegypt/"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" target="_blank" href="https://www.linkedin.com/company/bayah-egypt/"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-  
-            </div>
+   <footer class="footer-section text-light pt-5">
+  <div class="container">
+
+    <div class="row g-4">
+
+      <!-- Brand -->
+      <div class="col-md-4">
+        <div class="d-flex align-items-center mb-3">
+          <img src="img/logo.ico" width="45" class="me-2">
+          <h5 class="fw-bold mb-0 text-primary">Bayah Soft</h5>
         </div>
-        <div class="container">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#"><span class="text-primary text-bold">Bayah Soft</span></a>, All Right Reserved. </div>
-                    <div class="col-md-6 text-center text-md-end" dir="rtl">
-                     </div>
-                </div>
-            </div>
+        <p class="text-muted">
+          حلول برمجية ومحاسبية ذكية تساعدك على إدارة أعمالك بثقة واحتراف
+        </p>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-md-4">
+        <h6 class="fw-bold mb-3 text-primary">تواصل معنا</h6>
+        <p class="mb-2">
+          <i class="fa fa-phone me-2 text-primary"></i> 01000960702
+        </p>
+        <p>
+          <i class="fa fa-envelope me-2 text-primary"></i>
+          BayahSoft@gmail.com
+        </p>
+      </div>
+
+      <!-- Social -->
+      <div class="col-md-4">
+        <h6 class="fw-bold mb-3 text-primary">تابعنا</h6>
+        <div class="d-flex gap-2">
+          <a class="social-btn" href="https://www.facebook.com/bayahegypt/" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a class="social-btn" href="https://www.linkedin.com/company/bayah-egypt/" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
         </div>
+      </div>
+
     </div>
+
+    <!-- Bottom -->
+    <div class="footer-bottom text-center mt-4 pt-3">
+      © 2026 Bayah Soft — All Rights Reserved
+    </div>
+
+  </div>
+</footer>
     <!-- Footer End -->
 
 
