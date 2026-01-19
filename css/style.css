@@ -9,6 +9,12 @@ html {
   width: 100%;
   overflow-x: hidden;
 }
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+  overflow-x: hidden !important; /* prevents horizontal scroll */
+}
 
 :root {
   --primary: #1d838c;
@@ -20,8 +26,7 @@ html {
 
 body {
   background-color: #f8f9fa;
-  font-family: 'Cairo', 'Manrope', sans-serif;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   color: #333;
 }
 
@@ -30,14 +35,14 @@ body {
   letter-spacing: 0.25rem;
 }
 
-h1.title-header,
+/* h1.title-header,
 h2.title-header,
 h3.title-header,
 h4.title-header,
 h5.title-header,
 h6.title-header {
   font-family: 'Henny Penny', cursive;
-}
+} */
 
 .fw-medium { font-weight: 600; }
 .fw-semi-bold { font-weight: 700; }
