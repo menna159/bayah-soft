@@ -46,3 +46,34 @@ document.addEventListener('DOMContentLoaded', () => {
       spinner.classList.remove('show');
     });
 });
+
+const params = new URLSearchParams(window.location.search);
+const service = params.get("service");
+
+const content = {
+  erp: {
+    title: "ERP System",
+    intro: "https://drive.google.com/file/d/1rCmjzZPmBWCEVjN9ScODaSTf87WpCkO-/preview",
+    presentation: "https://drive.google.com/file/d/1G8eO9iMtU0TPjlHDZ3MCqiZXq2-TLq3O/preview",
+    pdf: "erp.pdf"
+  },
+  hr: {
+    title: "HR System",
+    intro: "PUT_HR_VIDEO_LINK",
+    presentation: "PUT_HR_PRESENTATION",
+    pdf: "hr.pdf"
+  },
+  crm: {
+    title: "CRM System",
+    intro: "PUT_CRM_VIDEO_LINK",
+    presentation: "PUT_CRM_PRESENTATION",
+    pdf: "crm.pdf"
+  }
+};
+
+if(content[service]){
+  document.querySelector("h5").innerHTML = `<i class="fas fa-play-circle me-2"></i>Introduction to ${content[service].title}`;
+  document.querySelectorAll("iframe")[0].src = content[service].intro;
+  document.querySelectorAll("iframe")[1].src = content[service].presentation;
+  document.querySelectorAll("iframe")[2].src = content[service].pdf;
+}

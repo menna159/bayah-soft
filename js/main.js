@@ -115,3 +115,4 @@ function handleCardView(id){
       overlay.style.display = "none";
       overlay.classList.remove("d-flex");
     }
+    

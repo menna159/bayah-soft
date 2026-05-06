@@ -50,7 +50,79 @@
     }
   </style>
 </head>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
 
+  const params = new URLSearchParams(window.location.search);
+  const service = params.get("service");
+
+  const erpSection = document.getElementById("erpSection");
+  const imagesSection = document.getElementById("imagesSection");
+  const imageContainer = document.getElementById("imageContainer");
+
+  const content = {
+    erp: {
+      type: "video",
+      intro: "https://drive.google.com/file/d/1rCmjzZPmBWCEVjN9ScODaSTf87WpCkO-/preview",
+      presentation: "https://drive.google.com/file/d/1G8eO9iMtU0TPjlHDZ3MCqiZXq2-TLq3O/preview",
+      pdf: "خريطة تدفق العمليات -لنظام ابصار.pdf"
+    },
+    hr: {
+      type: "images",
+        images: Array.from({ length: 14 }, (_, i) => i + 1)
+    .filter(num => num !== 5) // استثناء hr5
+    .map(num => `img/hr/hr${num}.jpg`)
+
+    },
+    crm: {
+      type: "images",
+        images: Array.from({ length: 10 }, (_, i) => `img/crm/crm${i + 1}.jpg`)
+
+    }
+  };
+
+  if (!content[service]) return;
+
+  // ERP
+  if (content[service].type === "video") {
+    erpSection.style.display = "block";
+    imagesSection.style.display = "none";
+
+    document.getElementById("introVideo").src = content[service].intro;
+    document.getElementById("presentationVideo").src = content[service].presentation;
+    document.getElementById("pdfViewer").src = content[service].pdf;
+  }
+
+  // HR + CRM
+  if (content[service].type === "images") {
+    erpSection.style.display = "none";
+    imagesSection.style.display = "block";
+
+    imageContainer.innerHTML = "";
+
+    content[service].images.forEach(src => {
+      imageContainer.innerHTML += `
+        <div class="col-md-4 mb-3">
+          <span onclick="closeImgModal()" style="position:absolute;top:20px;right:30px;color:white;font-size:30px;cursor:pointer;">×</span>
+<img src="${src}"
+     class="img-fluid rounded shadow-sm"
+     style="cursor:pointer;padding:0;object-fit:cover;height:200px;width:100%;"
+     onclick="openImgModal('${src}')"/>        </div>
+      `;
+    });
+  }
+
+});
+function openImgModal(src) {
+  document.getElementById("modalImg").src = src;
+  document.getElementById("imgModal").style.display = "flex";
+}
+
+function closeImgModal() {
+  document.getElementById("imgModal").style.display = "none";
+}
+
+</script>
 <body>
     <!-- Navbar Start -->
       <nav class="navbar navbar-expand-lg navbar-light  shadow-sm sticky-top">
@@ -80,30 +152,45 @@
 </nav>
 <!-- Navbar End -->
 
-  <div class="container py-5">
+ <div class="container py-5">
 
-    <!-- Introduction Video -->
-    <!-- Introduction Video -->
-<div class="section-card">
-  <h5 class="mb-3 text-primary"><i class="fas fa-play-circle me-2"></i>Introduction to IPSAR</h5>
-  <iframe src="https://drive.google.com/file/d/1rCmjzZPmBWCEVjN9ScODaSTf87WpCkO-/preview" allow="autoplay" allowfullscreen></iframe>
-</div>
+  <!-- ERP Section -->
+  <div id="erpSection">
 
-
-    <!-- Presentation Video -->
     <div class="section-card">
-      <h2 class="mb-3 text-primary"><i class="fas fa-video me-2"></i>IPSAR Presentation</h2>
-  
-<iframe src="https://drive.google.com/file/d/1G8eO9iMtU0TPjlHDZ3MCqiZXq2-TLq3O/preview" allow="autoplay" allowfullscreen></iframe>
-      </iframe>
+      <h5 class="mb-3 text-primary">
+        <i class="fas fa-play-circle me-2"></i>Introduction
+      </h5>
+      <iframe id="introVideo"></iframe>
     </div>
 
-    <!-- PDF Viewer -->
     <div class="section-card">
-      <h5 class="mb-3 text-primary" ><i class="fas fa-file-pdf me-2"></i>خريطة تدفق العمليات لنظام ابصار</h5>
-      <iframe src="خريطة تدفق العمليات -لنظام ابصار.pdf"></iframe>
+      <h2 class="mb-3 text-primary">
+        <i class="fas fa-video me-2"></i>Presentation
+      </h2>
+      <iframe id="presentationVideo"></iframe>
+    </div>
+
+    <div class="section-card">
+      <h5 class="mb-3 text-primary">
+        <i class="fas fa-file-pdf me-2"></i>PDF
+      </h5>
+      <iframe id="pdfViewer"></iframe>
+    </div>
+
+  </div>
+
+  <!-- Images Section (HR + CRM) -->
+  <div id="imagesSection" style="display:none;">
+    <div class="section-card">
+      <h2 class="text-primary mb-4 text-center">System Gallery</h2>
+      <div class="row" id="imageContainer"></div>
     </div>
   </div>
+
+</div>
+
+<!-- --footer -->
     <footer class="footer-section text-light pt-5">
   <div class="container">
 
@@ -115,7 +202,7 @@
           <img src="img/logo.ico" width="45" class="me-2">
           <h5 class="fw-bold mb-0 text-primary">Bayah Soft</h5>
         </div>
-        <p class="text-muted">
+        <p >
           حلول برمجية ومحاسبية ذكية تساعدك على إدارة أعمالك بثقة واحتراف
         </p>
       </div>
@@ -154,6 +241,12 @@
 
   </div>
 </footer>
+<!-- Image Preview Modal -->
+<div id="imgModal" class="img-modal" onclick="closeImgModal()">
+  <div class="img-modal-content">
+    <img id="modalImg" src="">
+  </div>
+</div>
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
             <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 

@@ -83,7 +83,7 @@
       <!-- Service Start -->
   <div class="container-fluid-xxl py-5">
         <div class="container-fluid">
-            <div class="row g-10 justify-content-between">
+            <div class="row  justify-content-between">
   <div class="col-lg-2 col-sm-6  wow fadeInUp" data-wow-delay="0.1s" style="cursor: pointer;">
       <div class="service-item text-center pt-3 h-100"style="border-radius: 0.7rem;">
         <div class="p-4">
@@ -105,7 +105,8 @@
     </div>
 
  <div class="col-lg-2 col-sm-6 wow fadeInUp justify-content-center" data-wow-delay="0.3s"
-    onclick="window.location.href ='erp_system.html'" style="cursor: pointer;">
+    onclick="window.location.href='media.html?service=erp'"
+ style="cursor: pointer;">
       <div class="service-item text-center pt-3 h-100">
         <div class="p-4">
           <i class="fa fa-3x fa-cogs text-primary mb-4 "></i>
@@ -143,7 +144,17 @@
         </div>
       </div>
     </div>
-
+    <div class="col-lg-2 col-sm-6 wow fadeInUp" data-wow-delay="0.8s"
+   
+     style="cursor: pointer;">
+  <div class="service-item text-center pt-3 h-100">
+    <div class="p-4">
+      <i class="fa fa-3x fa-globe text-primary mb-4"></i>
+      <h5 class="mb-3">Website</h5>
+      <p>تصميم وتطوير مواقع إلكترونية احترافية تعكس هوية الشركة وتحقق أهدافها التسويقية</p>
+    </div>
+  </div>
+</div>
     <div class="col-lg-2 col-sm-6 wow fadeInUp" data-wow-delay="0.5s" style="cursor: pointer;">
       <div class="service-item text-center pt-3 h-100" >
         <div class="p-4">
@@ -154,6 +165,36 @@
         </div>
       </div>
     </div>
+    <div class="d-flex col-lg-6 ">
+<div class=" col-sm-6 wow fadeInUp mb-4" data-wow-delay="0.6s"
+     onclick="window.location.href='media.html?service=hr'" style="cursor: pointer;">
+  <div class="service-item text-center pt-3 h-100">
+    <div class="p-4">
+      <i class="fa fa-3x fa-users text-primary mb-4"></i>
+      <h5 class="mb-3">HR System</h5>
+      <p>إدارة الموارد البشرية باحترافية، من خلال حلول HR متكاملة تسهل إدارة الموظفين والعمليات الإدارية، وتساعد في تحسين أداء الشركة</p>
+    </div>
+  </div>
+</div> 
+
+<div class="col-lg-6 col-sm-6 wow fadeInUp" data-wow-delay="0.7s"
+     onclick="window.location.href='media.html?service=crm'" style="cursor: pointer;">
+  <div class="service-item text-center pt-3 h-100">
+    <div class="p-4">
+      <i class="fa fa-3x fa-handshake text-primary mb-4"></i>
+      <h5 class="mb-3">CRM System</h5>
+      <p> إدارة علاقات العملاء، متابعة المبيعات، وتحليل بيانات العملاء و تحسين تجربة العملاء من خلال حلول CRM ذكية، تساعد في بناء علاقات قوية وزيادة المبيعات، و تحليل البيانات لتحسين القرارات التسويقية</p>
+    </div>
+  </div>
+</div>
+    </div>
+    <!-- HR Service -->
+
+
+<!-- CRM Service -->
+
+
+
     <!-- Service End -->
 
     
@@ -169,7 +210,7 @@
           <img src="img/logo.ico" width="45" class="me-2">
           <h5 class="fw-bold mb-0 text-primary">Bayah Soft</h5>
         </div>
-        <p class="text-muted">
+        <p >
           حلول برمجية ومحاسبية ذكية تساعدك على إدارة أعمالك بثقة واحتراف
         </p>
       </div>
@@ -225,6 +266,41 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const params = new URLSearchParams(window.location.search);
+  const service = params.get("service");
+
+  const content = {
+    erp: {
+      title: "ERP System",
+      intro: "https://drive.google.com/file/d/1rCmjzZPmBWCEVjN9ScODaSTf87WpCkO-/preview",
+      presentation: "https://drive.google.com/file/d/1G8eO9iMtU0TPjlHDZ3MCqiZXq2-TLq3O/preview",
+      pdf: "erp.pdf"
+    },
+    hr: {
+      title: "HR System",
+      intro: "PUT_HR_VIDEO_LINK",
+      presentation: "PUT_HR_PRESENTATION",
+      pdf: "hr.pdf"
+    },
+    crm: {
+      title: "CRM System",
+      intro: "PUT_CRM_VIDEO_LINK",
+      presentation: "PUT_CRM_PRESENTATION",
+      pdf: "crm.pdf"
+    }
+  };
+
+  if (content[service]) {
+    document.getElementById("introVideo").src = content[service].intro;
+    document.getElementById("presentationVideo").src = content[service].presentation;
+    document.getElementById("pdfViewer").src = content[service].pdf;
+  }
+
+});
+</script>
 </body>
 
 </html>
