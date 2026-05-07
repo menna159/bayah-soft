@@ -19,8 +19,8 @@ html, body {
 :root {
   /* ===== Light Mode (Default) ===== */
   --primary: #4FB6E8;
-  --primary-light: #A9D9F5;
-  --primary-dark: #1F6FA8;
+  --primary-light: #86acc2;
+  --primary-dark: #16496e;
 
   --accent: #2B3A55;
 
@@ -189,10 +189,19 @@ h6.title-header {
 }
 
 .navbar-light {
-  background: linear-gradient(135deg, var(--primary), #020617) !important;
+  background: linear-gradient(135deg ,var(--primary-light),rgba(12, 74, 140, 0.9) ) !important;
   transition: background 0.5s ease, box-shadow 0.5s ease;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   padding: 0.8rem 0;
+}
+.text-primary {
+  color: rgb(12, 74, 140) !important;
+}
+.nav-title {
+  color: var(--primary-light) !important;
+  font-size: 1.4rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  font-weight: bold !important;
 }
 
 .navbar-light .navbar-brand span {
@@ -472,7 +481,7 @@ h6.title-header {
   opacity: 1;
 }
 .footer-section {
-  background: linear-gradient(135deg, var(--primary), #020617);
+  background: linear-gradient(135deg ,var(--primary-light),rgba(12, 74, 140, 0.9) ) !important;
 }
 
 .footer-section p {
@@ -481,7 +490,7 @@ h6.title-header {
 
 .footer-bottom {
   border-top: 1px solid rgba(255,255,255,.1);
-  color: #9ca3af;
+  color: #d0d9e8;
 }
 
 .social-btn {
