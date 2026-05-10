@@ -29,40 +29,96 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+      .contact-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.contact-group h6 {
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.contact-group .numbers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.contact-group .numbers a {
+  background: #f1f5f9;
+  padding: 8px 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.contact-group .numbers a:hover {
+  background: #2563eb;
+  color: #fff;
+}
+
+.whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #25D366;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
+    </style>
 </head>
 
 <body>
 
 
-   <!-- ================= Navbar ================= -->
-<nav class="navbar navbar-expand-lg navbar-light  shadow-sm sticky-top">
-  <div class="container">
-   <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-                <img src="img/logo.ico" width="60" alt="Bayah Soft">
+  
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+    <div class="container">
 
-      <span class="fw-bold nav-title">Bayah Soft</span>
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <img src="img/logo.ico" width="55" alt="Bayah Soft Logo">
+        <span class="nav-title">Bayah Soft</span>
+      </a>
 
-    </a>
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-   <div class="collapse navbar-collapse" id="navbarCollapse">
-  <ul class="navbar-nav fw-semibold"> <!-- أزل ms-auto -->
-    <li class="nav-item"><a class="nav-link" href="contact.html">تواصل معنا</a></li>
-        <li class="nav-item"><a class="nav-link" href="services.html">الخدمات</a></li>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+        <ul class="navbar-nav fw-semibold align-items-center">
 
-        <li class="nav-item"><a class="nav-link" href="customers.html">عملاؤنا</a></li>
+         
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">الخدمات</a>
+          </li>
 
-        <li class="nav-item"><a class="nav-link active" href="index.html">الرئيسية</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="customers.html">عملاؤنا</a>
+          </li>
 
-  </ul>
-</div>
- 
+          <li class="nav-item">
+            <a class="nav-link active" href="contact.html">تواصل معنا</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link " href="index.html">الرئيسية</a>
+          </li>
 
-  </div>
-</nav>
+        </ul>
+      </div>
 
+    </div>
+  </nav>
 
    
 
@@ -101,7 +157,7 @@
                         </div>
                     </div>
                     <div id="accordion" class="d-flex flex-column gap-2 justify-content-center align-items-stretch mt-3">
-  <!-- Sales Card -->
+  <!-- Sales Card
   <div class="card border-0 shadow-sm">
     <div class="card-header bg-light" id="headingOne">
       <h5 class="mb-0">
@@ -130,10 +186,10 @@
         </ul>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- Technical Support Card -->
-  <div class="card border-0 shadow-sm">
+  <!-- <div class="card border-0 shadow-sm">
     <div class="card-header bg-light" id="headingTwo">
       <h5 class="mb-0">
         <button class="btn btn-link collapsed d-flex align-items-center justify-content-around w-100 text-start" 
@@ -165,7 +221,35 @@
                                     </div>
       </div>
     </div>
+  </div> -->
+  <div class="contact-card mt-4">
+
+  <h5 class="text-primary fw-bold mb-3"> أرقام التواصل 📞</h5>
+
+  <div class="contact-group">
+    <h6>المبيعات</h6>
+    <div class="numbers">
+      <a href="tel:+201111215140">+20 111 121 5140</a>
+      <a href="tel:+201111215147">+20 111 121 5147</a>
+      <a href="tel:+201117815537">+20 111 781 5537</a>
+    </div>
   </div>
+
+  <div class="contact-group mt-3">
+    <h6>الدعم الفني</h6>
+    <div class="numbers">
+      <a href="tel:+201000960702">+20 100 096 0702</a>
+      <a href="tel:+201017552494">+20 101 755 2494</a>
+    </div>
+
+    <div class="mt-2">
+      <a href="https://wa.me/201000960702" class="whatsapp">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+    </div>
+  </div>
+
+</div>
 </div>
 
 
@@ -204,25 +288,40 @@
 
       <!-- Contact -->
       <div class="col-md-4">
-        <h6 class="fw-bold mb-3 text-primary">تواصل معنا</h6>
-        <p class="mb-2">
-          <i class="fa fa-phone me-2 text-primary"></i> 01000960702
-        </p>
-        <p>
-          <i class="fa fa-envelope me-2 text-primary"></i>
-          BayahSoft@gmail.com
-        </p>
-      </div>
+  <h6 class="fw-bold mb-3 text-primary">تواصل معنا</h6>
+
+  <!-- Phone -->
+  <p class="mb-2">
+    <i class="fa fa-phone me-2 text-primary"></i> 01000960702
+  </p>
+
+  <!-- Email -->
+  <p class="mb-2">
+    <i class="fa fa-envelope me-2 text-primary"></i>
+    BayahSoft@gmail.com
+  </p>
+
+  <!-- Address -->
+  <p class="mb-0">
+    <i class="fa fa-map-marker-alt me-2 text-primary"></i>
+    24 Mohammed Farid Abou Hadid, Nasr City, Cairo
+  </p>
+</div>
 
       <!-- Social -->
       <div class="col-md-4">
         <h6 class="fw-bold mb-3 text-primary">تابعنا</h6>
         <div class="d-flex gap-2">
-          <a class="social-btn" href="https://www.facebook.com/bayahegypt/" target="_blank">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a class="social-btn" href="https://www.linkedin.com/company/bayah-egypt/" target="_blank">
+         
+        
+                <a class="social-btn" href="https://wa.me/201000960702" class="whatsapp">
+        <i class="fab fa-whatsapp"></i> 
+      </a>
+        <a class="social-btn" href="https://www.linkedin.com/company/bayah-egypt/" target="_blank">
             <i class="fab fa-linkedin-in"></i>
+          </a>
+       <a class="social-btn" href="https://www.facebook.com/bayahegypt/" target="_blank">
+            <i class="fab fa-facebook-f"></i>
           </a>
         </div>
       </div>
