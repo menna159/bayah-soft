@@ -3,28 +3,28 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Bayah Soft</title>
+    <title>خدماتنا | Bayah Soft</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Technology" name="keywords">
-    <meta content="" name="description">
+    <meta content="Bayah Soft, ERP, VPN, IT, Cashier, HR, CRM, تطوير مواقع" name="keywords">
+    <meta content="خدمات Bayah Soft: أنظمة ERP وHR وCRM، شبكات VPN، صيانة IT، أنظمة كاشير، تطوير مواقع وبرمجيات." name="description">
 
     <!-- Favicon -->
-<link href="img/bayahLogoo.png" rel="icon">
+    <link href="img/logo.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
+    <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
@@ -33,256 +33,203 @@
 
 <body>
 
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
 
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="img/logo.ico" width="42" alt="Bayah Soft Logo">
+                <span class="nav-title">Bayah Soft</span>
+            </a>
 
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
-    <div class="container">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                <ul class="navbar-nav align-items-center">
 
-      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-        <img src="img/logo.ico" width="55" alt="Bayah Soft Logo">
-        <span class="nav-title">Bayah Soft</span>
-      </a>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="services.html">الخدمات</a>
+                    </li>
 
-      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+                    <li class="nav-item">
+                        <a class="nav-link" href="customers.html">عملاؤنا</a>
+                    </li>
 
-      <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-        <ul class="navbar-nav fw-semibold align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">تواصل معنا</a>
+                    </li>
 
-         
-          <li class="nav-item">
-            <a class="nav-link active" href="services.html">الخدمات</a>
-          </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">الرئيسية</a>
+                    </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="customers.html">عملاؤنا</a>
-          </li>
+                </ul>
+            </div>
 
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">تواصل معنا</a>
-          </li>
-           <li class="nav-item">
-            <a class="nav-link " href="index.html">الرئيسية</a>
-          </li>
+        </div>
+    </nav>
 
-        </ul>
-      </div>
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <span class="section-eyebrow">خدماتنا</span>
+            <h1 class="section-title">كل ما تحتاجه شركتك من مكان واحد</h1>
+            <p class="section-subtitle mx-auto mt-3">
+                من الأنظمة البرمجية إلى الشبكات والدعم الفني. اضغط على أي خدمة للتفاصيل.
+            </p>
+        </div>
+    </header>
 
+    <!-- Services -->
+    <div class="container py-5">
+        <div class="row g-4" id="servicesGrid">
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="service-card" data-service="vpn" tabindex="0" role="button">
+                    <div class="service-icon"><i class="fa fa-shield-alt"></i></div>
+                    <h5>VPN</h5>
+                    <p>ربط الفروع الخارجية بأمان</p>
+                    <span class="service-more">التفاصيل <i class="fa fa-arrow-left"></i></span>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="service-card" data-service="it" tabindex="0" role="button">
+                    <div class="service-icon"><i class="fa fa-network-wired"></i></div>
+                    <h5>IT</h5>
+                    <p>إدارة وصيانة الأنظمة التقنية</p>
+                    <span class="service-more">التفاصيل <i class="fa fa-arrow-left"></i></span>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="service-card" data-service="erp" tabindex="0" role="button">
+                    <div class="service-icon"><i class="fa fa-cogs"></i></div>
+                    <h5>ERP System (IPSAR)</h5>
+                    <p>نظام تخطيط موارد متكامل</p>
+                    <span class="service-more">التفاصيل <i class="fa fa-arrow-left"></i></span>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="service-card" data-service="cashier" tabindex="0" role="button">
+                    <div class="service-icon"><i class="fa fa-cash-register"></i></div>
+                    <h5>Cashier</h5>
+                    <p>نقاط بيع للمتاجر والمطاعم</p>
+                    <span class="service-more">التفاصيل <i class="fa fa-arrow-left"></i></span>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="service-card" data-service="website" tabindex="0" role="button">
+                    <div class="service-icon"><i class="fa fa-globe"></i></div>
+                    <h5>Website</h5>
+                    <p>مواقع تعكس هوية شركتك</p>
+                    <span class="service-more">التفاصيل <i class="fa fa-arrow-left"></i></span>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="service-card" data-service="software" tabindex="0" role="button">
+                    <div class="service-icon"><i class="fa fa-code"></i></div>
+                    <h5>Software Design &amp; Development</h5>
+                    <p>برمجيات مبنية على احتياجك</p>
+                    <span class="service-more">التفاصيل <i class="fa fa-arrow-left"></i></span>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="service-card" data-service="hr" tabindex="0" role="button">
+                    <div class="service-icon"><i class="fa fa-users"></i></div>
+                    <h5>HR System</h5>
+                    <p>إدارة الموارد البشرية باحترافية</p>
+                    <span class="service-more">التفاصيل <i class="fa fa-arrow-left"></i></span>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="service-card" data-service="crm" tabindex="0" role="button">
+                    <div class="service-icon"><i class="fa fa-handshake"></i></div>
+                    <h5>CRM System</h5>
+                    <p>علاقات عملاء أقوى ومبيعات أوضح</p>
+                    <span class="service-more">التفاصيل <i class="fa fa-arrow-left"></i></span>
+                </div>
+            </div>
+
+        </div>
     </div>
-  </nav>
 
-
-
-    <!-- Header Start -->
-    <div class="container-fluid py-4 page-header" >
-        <div class="container py-2">
-            <div class="row justify-content-center">
-                <div class="col-lg-10 text-center">
-                    <h1 class="display-5  text-primary animated slideInDown">الخدمات</h1>
-                   
+    <!-- Service Brief Modal -->
+    <div class="modal fade" id="serviceModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="serviceModalTitle"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="إغلاق"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="serviceModalBrief"></p>
+                    <ul class="service-modules d-none" id="serviceModalModules"></ul>
+                </div>
+                <div class="modal-footer border-0 pt-0">
+                    <a href="contact.html" class="btn btn-outline-primary" id="serviceModalContact">تواصل معنا</a>
+                    <a href="#" class="btn btn-primary d-none" id="serviceModalLink" target="_self">شاهد الشرح والعرض التقديمي</a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Header End -->
 
-      <!-- Service Start -->
-  <div class="container-fluid-xxl py-5">
-        <div class="container-fluid">
-            <div class="row  justify-content-between">
-  <div class="col-lg-2 col-sm-6  wow fadeInUp" data-wow-delay="0.1s" style="cursor: pointer;">
-      <div class="service-item text-center pt-3 h-100"style="border-radius: 0.7rem;">
-        <div class="p-4">
-          <i class="fa fa-3x fa-shield-alt text-primary mb-4"></i>
-          <h5 class="mb-3">VPN</h5>
-          <p>ربط فروع خارجية</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-lg-2 col-sm-6 wow fadeInUp" data-wow-delay="0.2s" style="cursor: pointer;">
-      <div class="service-item text-center pt-3 h-100" >
-        <div class="p-4">
-          <i class="fa fa-3x fa-network-wired text-primary mb-4 "></i>
-          <h5 class="mb-3">IT</h5>
-          <p> إدارة وتشغيل وصيانة الأنظمة التقنية، بما في ذلك الأجهزة والشبكات والبرامج وربط فروع داخلية</p>
-        </div>
-      </div>
-    </div>
-
- <div class="col-lg-2 col-sm-6 wow fadeInUp justify-content-center" data-wow-delay="0.3s"
-    onclick="window.location.href='media.html?service=erp'"
- style="cursor: pointer;">
-      <div class="service-item text-center pt-3 h-100">
-        <div class="p-4">
-          <i class="fa fa-3x fa-cogs text-primary mb-4 "></i>
-          <h5 class="mb-3">ERP System (IPSAR)</h5>
-          
-       <div class="list-item d-flex flex-row justify-content-center align-items-center">
-        <!-- Numbers Column -->
-  <div class="d-flex flex-column">
-    <span class="mb-2">1</span>
-    <span class="mb-2">2</span>
-    <span class="mb-2">3</span>
-  </div>
-  <!-- Labels Column -->
-  <div class="d-flex flex-column me-3 ">
-    <p class="mb-2">بيع مباشر</p>
-    <p class="mb-2">بيع غير مباشر</p>
-    <p class="mb-2">تصنيع</p>
-  </div>
-
-  
-</div>
-
-        
-        </div>
-      </div>
-    </div> 
-
-
-    <div class="col-lg-2 col-sm-6  wow fadeInUp " data-wow-delay="0.4s" style="cursor: pointer;">
-      <div class="service-item text-center pt-3 h-100" >
-        <div class="p-4">
-          <i class="fa fa-3x fa-cash-register text-primary mb-4"></i>
-          <h5 class="mb-3">Cashier</h5>
-          <p>تسجيل وإدارة عمليات البيع والشراء في المتاجر والمطاعم وغيرها من الأنشطة التجارية</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-2 col-sm-6 wow fadeInUp" data-wow-delay="0.8s"
-   
-     style="cursor: pointer;">
-  <div class="service-item text-center pt-3 h-100">
-    <div class="p-4">
-      <i class="fa fa-3x fa-globe text-primary mb-4"></i>
-      <h5 class="mb-3">Website</h5>
-      <p>تصميم وتطوير مواقع إلكترونية احترافية تعكس هوية الشركة وتحقق أهدافها التسويقية</p>
-    </div>
-  </div>
-</div>
-    <div class="col-lg-2 col-sm-6 wow fadeInUp" data-wow-delay="0.5s" style="cursor: pointer;">
-      <div class="service-item text-center pt-3 h-100" >
-        <div class="p-4">
-          <i class="fa fa-3x fa-code text-primary mb-4"></i>
-          <h5 class="mb-3">Software Design & Development</h5>
-          <p>تحليل، وتصميم، وإنشاء، واختبار، ونشر البرمجيات لتلبية احتياجات محددة للمستخدمين أو المؤسسات</p>
-          <p></p>
-        </div>
-      </div>
-    </div>
-    <div class="d-flex col-lg-6 ">
-<div class=" col-sm-6 wow fadeInUp mb-4" data-wow-delay="0.6s"
-     onclick="window.location.href='media.html?service=hr'" style="cursor: pointer;">
-  <div class="service-item text-center pt-3 h-100">
-    <div class="p-4">
-      <i class="fa fa-3x fa-users text-primary mb-4"></i>
-      <h5 class="mb-3">HR System</h5>
-      <p>إدارة الموارد البشرية باحترافية، من خلال حلول HR متكاملة تسهل إدارة الموظفين والعمليات الإدارية، وتساعد في تحسين أداء الشركة</p>
-    </div>
-  </div>
-</div> 
-
-<div class="col-lg-6 col-sm-6 wow fadeInUp" data-wow-delay="0.7s"
-     onclick="window.location.href='media.html?service=crm'" style="cursor: pointer;">
-  <div class="service-item text-center pt-3 h-100">
-    <div class="p-4">
-      <i class="fa fa-3x fa-handshake text-primary mb-4"></i>
-      <h5 class="mb-3">CRM System</h5>
-      <p> إدارة علاقات العملاء، متابعة المبيعات، وتحليل بيانات العملاء و تحسين تجربة العملاء من خلال حلول CRM ذكية، تساعد في بناء علاقات قوية وزيادة المبيعات، و تحليل البيانات لتحسين القرارات التسويقية</p>
-    </div>
-  </div>
-</div>
-    </div>
-    <!-- HR Service -->
-
-
-<!-- CRM Service -->
-
-
-
-    <!-- Service End -->
-
-    
     <!-- Footer Start -->
-   <footer class="footer-section text-light pt-5">
-  <div class="container">
+    <footer class="footer-section pt-5">
+        <div class="container">
 
-    <div class="row g-4">
+            <div class="row g-4">
 
-      <!-- Brand -->
-      <div class="col-md-4">
-        <div class="d-flex align-items-center mb-3">
-          <img src="img/logo.ico" width="45" class="me-2">
-          <h5 class="fw-bold mb-0 nav-title">Bayah Soft</h5>
+                <!-- Brand -->
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="img/logo.ico" width="40" class="me-2">
+                        <h5 class="fw-bold mb-0 nav-title">Bayah Soft</h5>
+                    </div>
+                    <p>أنظمة ERP ومحاسبة وCRM وHR على Oracle Database، لإدارة شركتك من مكان واحد بدقة وثقة.</p>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-md-4">
+                    <h6 class="fw-bold mb-3">تواصل معنا</h6>
+                    <p class="mb-2"><i class="fa fa-phone me-2"></i> 01000960702</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-2"></i> BayahSoft@gmail.com</p>
+                    <p class="mb-0"><i class="fa fa-map-marker-alt me-2"></i> 24 محمد فريد أبو حديد، مدينة نصر، القاهرة</p>
+                </div>
+
+                <!-- Social -->
+                <div class="col-md-4">
+                    <h6 class="fw-bold mb-3">تابعنا</h6>
+                    <div class="d-flex gap-2">
+                        <a class="social-btn" href="https://wa.me/201000960702" aria-label="واتساب"><i class="fab fa-whatsapp"></i></a>
+                        <a class="social-btn" href="https://www.facebook.com/bayahegypt/" target="_blank" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom -->
+            <div class="footer-bottom text-center mt-4 pt-3">
+                © 2026 Bayah Soft — جميع الحقوق محفوظة
+            </div>
+
         </div>
-        <p >
-          حلول برمجية ومحاسبية ذكية تساعدك على إدارة أعمالك بثقة واحتراف
-        </p>
-      </div>
-
-      <!-- Contact -->
-      <div class="col-md-4">
-  <h6 class="fw-bold mb-3 text-primary">تواصل معنا</h6>
-
-  <!-- Phone -->
-  <p class="mb-2">
-    <i class="fa fa-phone me-2 text-primary"></i> 01000960702
-  </p>
-
-  <!-- Email -->
-  <p class="mb-2">
-    <i class="fa fa-envelope me-2 text-primary"></i>
-    BayahSoft@gmail.com
-  </p>
-
-  <!-- Address -->
-  <p class="mb-0">
-    <i class="fa fa-map-marker-alt me-2 text-primary"></i>
-    24 Mohammed Farid Abou Hadid, Nasr City, Cairo
-  </p>
-</div>
-
-      <!-- Social -->
-      <div class="col-md-4">
-        <h6 class="fw-bold mb-3 text-primary">تابعنا</h6>
-        <div class="d-flex gap-2">
-         
-        
-                <a class="social-btn" href="https://wa.me/201000960702" class="whatsapp">
-        <i class="fab fa-whatsapp"></i> 
-      </a>
-        <a class="social-btn" href="https://www.linkedin.com/company/bayah-egypt/" target="_blank">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-       <a class="social-btn" href="https://www.facebook.com/bayahegypt/" target="_blank">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Bottom -->
-    <div class="footer-bottom text-center mt-4 pt-3">
-      © 2026 Bayah Soft — All Rights Reserved
-    </div>
-
-  </div>
-</footer>
+    </footer>
     <!-- Footer End -->
-
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
@@ -290,41 +237,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <script>
-document.addEventListener("DOMContentLoaded", function () {
-
-  const params = new URLSearchParams(window.location.search);
-  const service = params.get("service");
-
-  const content = {
-    erp: {
-      title: "ERP System",
-      intro: "https://drive.google.com/file/d/1rCmjzZPmBWCEVjN9ScODaSTf87WpCkO-/preview",
-      presentation: "https://drive.google.com/file/d/1G8eO9iMtU0TPjlHDZ3MCqiZXq2-TLq3O/preview",
-      pdf: "erp.pdf"
-    },
-    hr: {
-      title: "HR System",
-      intro: "PUT_HR_VIDEO_LINK",
-      presentation: "PUT_HR_PRESENTATION",
-      pdf: "hr.pdf"
-    },
-    crm: {
-      title: "CRM System",
-      intro: "PUT_CRM_VIDEO_LINK",
-      presentation: "PUT_CRM_PRESENTATION",
-      pdf: "crm.pdf"
-    }
-  };
-
-  if (content[service]) {
-    document.getElementById("introVideo").src = content[service].intro;
-    document.getElementById("presentationVideo").src = content[service].presentation;
-    document.getElementById("pdfViewer").src = content[service].pdf;
-  }
-
-});
-</script>
+    <script src="js/servicesBrief.js"></script>
 </body>
 
 </html>

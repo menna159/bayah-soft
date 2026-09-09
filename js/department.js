@@ -14,14 +14,12 @@ const deptName = localStorage.getItem('selectedDepartment');
 
         dept.customers.forEach(cust => {
           let name = '';
-          let depNumbers = '-';
           let places = '-';
           let activity="-";
           if (typeof cust === 'string') {
             name = cust;
           } else {
             name = cust.name;
-            depNumbers = cust.depNumbers || '-';
             places = cust.place ? cust.place.join(', ') : '-';
              activity=cust.activity|| '-';
           }
@@ -29,7 +27,6 @@ const deptName = localStorage.getItem('selectedDepartment');
           tbody.innerHTML += `
             <tr>
                <td>${places}</td>
-               <td>${depNumbers}</td>
                <td>${activity}</td>
                <td>${name}</td>
             </tr>

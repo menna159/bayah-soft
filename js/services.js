@@ -1,50 +1,78 @@
 function openWindow(departmentName) {
   localStorage.setItem('selectedDepartment', departmentName);
-window.location.href = 'department.html';
+  window.location.href = 'department.html';
 }
 
 document.addEventListener('DOMContentLoaded', () => {
   const container = document.getElementById('departmentAccordion');
   const spinner = document.getElementById('spinner');
+  const searchInput = document.getElementById('departmentSearch');
+  const noResults = document.getElementById('noDepartmentsResult');
 
-  fetch('departments_full_data.json')
-    .then(res => res.json())
-    .then(data => {
-      data.forEach((dep, index) => {
-        const section = document.createElement('div');
-        section.className = 'card h-100 shadow-sm department-card text-center border-0';
-        section.style.cursor = 'pointer';
+  if (container) {
+    fetch('departments_full_data.json')
+      .then(res => res.json())
+      .then(data => {
+        data.forEach((dep, index) => {
+          const section = document.createElement('div');
+          section.className = 'card h-100 shadow-sm department-card text-center border-0';
+          section.style.cursor = 'pointer';
 
-        // تطبيق الألوان بالتناوب من لوحة الألوان
-        const colorClass = `bg-card-palette-${(index % 5) + 1}`;
-        section.classList.add(colorClass);
+          // تطبيق الألوان بالتناوب من لوحة الألوان
+          const colorClass = `bg-card-palette-${(index % 5) + 1}`;
+          section.classList.add(colorClass);
 
-        // Click handler
-        section.onclick = () => openWindow(dep.name.replace(/'/g, "\\'"));
+          // Click handler
+          section.onclick = () => openWindow(dep.name.replace(/'/g, "\\'"));
 
-        // Card content
-        section.innerHTML = `
-          <div class="card-body py-4">
-            <h5 class="card-title fw-semibold">
-              ${dep.name}
-            </h5>
-          </div>
-        `;
+          // Card content
+          section.innerHTML = `
+            <div class="card-body py-4">
+              <h5 class="card-title fw-semibold">
+                ${dep.name}
+              </h5>
+            </div>
+          `;
 
-        // Wrap in Bootstrap column
-        const col = document.createElement('div');
-        col.className = 'col-12 col-sm-6 col-md-3 mb-4 d-flex justify-content-center';
-        col.appendChild(section);
-        container.appendChild(col);
+          // Wrap in Bootstrap column
+          const col = document.createElement('div');
+          col.className = 'col-12 col-sm-6 col-md-3 mb-4 d-flex justify-content-center';
+          col.dataset.name = dep.name; // used by the search filter below
+          col.appendChild(section);
+          container.appendChild(col);
+        });
+
+        if (spinner) spinner.classList.remove('show');
+        filterDepartments(); // apply current search value, if any, once cards exist
+      })
+      .catch(err => {
+        console.error('Failed to load data:', err);
+        container.innerHTML = '<div class="text-danger text-center">حدث خطأ في تحميل العملاء</div>';
+        if (spinner) spinner.classList.remove('show');
       });
+  }
 
-      spinner.classList.remove('show');
-    })
-    .catch(err => {
-      console.error('Failed to load data:', err);
-      container.innerHTML = '<div class="text-danger text-center">حدث خطأ في تحميل العملاء</div>';
-      spinner.classList.remove('show');
+  function filterDepartments() {
+    if (!container || !searchInput) return;
+
+    const query = searchInput.value.trim().toLowerCase();
+    const cols = container.querySelectorAll(':scope > [data-name]');
+    let visibleCount = 0;
+
+    cols.forEach(col => {
+      const matches = col.dataset.name.toLowerCase().includes(query);
+      col.classList.toggle('d-none', !matches);
+      if (matches) visibleCount += 1;
     });
+
+    if (noResults) {
+      noResults.classList.toggle('d-none', visibleCount !== 0 || cols.length === 0);
+    }
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener('input', filterDepartments);
+  }
 });
 
 const params = new URLSearchParams(window.location.search);
@@ -71,7 +99,7 @@ const content = {
   }
 };
 
-if(content[service]){
+if (content[service]) {
   document.querySelector("h5").innerHTML = `<i class="fas fa-play-circle me-2"></i>Introduction to ${content[service].title}`;
   document.querySelectorAll("iframe")[0].src = content[service].intro;
   document.querySelectorAll("iframe")[1].src = content[service].presentation;

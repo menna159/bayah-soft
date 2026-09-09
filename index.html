@@ -3,19 +3,20 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Bayah Soft | حلول ERP وأنظمة محاسبية احترافية</title>
+  <title>Bayah Soft | أنظمة ERP ومحاسبة احترافية للشركات</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Bayah Soft تقدم حلول ERP وأنظمة محاسبية احترافية للشركات، تشمل CRM وHR باستخدام Oracle Database لتحسين الأداء وإدارة الأعمال بكفاءة.">
+    content="Bayah Soft تصمم وتبني أنظمة ERP ومحاسبة وCRM وHR على قواعد بيانات قوية، لتدير بها الشركات مبيعاتها ومخازنها وحساباتها وموظفيها من مكان واحد.">
   <meta name="keywords"
-    content="Bayah Soft, ERP, نظام محاسبي, Oracle Database, CRM, HR, حلول برمجية, إدارة الشركات">
+    content="Bayah Soft, ERP, نظام محاسبي, قواعد بيانات قوية, CRM, HR, حلول برمجية, إدارة الشركات">
 
   <!-- Favicon -->
   <link rel="icon" href="img/logo.ico">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap"
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap"
     rel="stylesheet">
 
   <!-- Icons -->
@@ -27,191 +28,16 @@
 
   <!-- Custom CSS -->
   <link href="css/style.css" rel="stylesheet">
-
-  <style>
-    :root {
-      --primary: #2563eb;
-      --secondary: #0f172a;
-      --light: #f8fafc;
-      --text: #475569;
-    }
-
-    body {
-      font-family: 'Cairo', sans-serif;
-      background: #fff;
-      color: var(--text);
-      overflow-x: hidden;
-    }
-
-
-    /* Hero */
-    .hero-section {
-      min-height: 90vh;
-      background:
-        linear-gradient(rgba(255, 255, 255, .9),
-          rgba(255, 255, 255, .95)),
-        url('img/hero-bg.jpg') center/cover;
-      display: flex;
-      align-items: center;
-      position: relative;
-    }
-
-    .hero-badge {
-      display: inline-block;
-      padding: 8px 18px;
-      background: rgba(37, 99, 235, .1);
-      color: var(--primary);
-      border-radius: 30px;
-      font-size: .9rem;
-      margin-bottom: 20px;
-      font-weight: 600;
-    }
-
-    .hero-title {
-      font-size: 3rem;
-      line-height: 1.4;
-      color: var(--secondary);
-      font-weight: 800;
-    }
-
-    .hero-desc {
-      font-size: 1.1rem;
-      line-height: 2;
-      margin-top: 20px;
-      color: #64748b;
-    }
-
-    .hero-buttons .btn {
-      padding: 14px 30px;
-      border-radius: 12px;
-      font-weight: 600;
-    }
-
-    .btn-primary {
-      background: var(--primary);
-      border: none;
-    }
-
-    .btn-primary:hover {
-      background: #1d4ed8;
-    }
-
-    .btn-outline-primary {
-      border: 2px solid var(--primary);
-      color: var(--primary);
-    }
-
-    .btn-outline-primary:hover {
-      background: var(--primary);
-      color: #fff;
-    }
-
-    /* Hero image */
-    .hero-image {
-      max-width: 100%;
-      animation: float 4s ease-in-out infinite;
-    }
-
-    @keyframes float {
-      0% {
-        transform: translateY(0px);
-      }
-
-      50% {
-        transform: translateY(-10px);
-      }
-
-      100% {
-        transform: translateY(0px);
-      }
-    }
-
-    /* Sections */
-    .section-title {
-      font-size: 2rem;
-      font-weight: 800;
-      color: var(--secondary);
-    }
-
-    .section-subtitle {
-      color: #64748b;
-      max-width: 700px;
-      margin: auto;
-      line-height: 1.9;
-    }
-
-    /* Project cards */
-    .project-card {
-      position: relative;
-      overflow: hidden;
-      border-radius: 24px;
-      cursor: pointer;
-      transition: .4s;
-      background: #fff;
-    }
-
-    .project-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 25px 60px rgba(0, 0, 0, .12);
-    }
-
-    .project-img {
-      width: 100%;
-      height: 280px;
-      object-fit: cover;
-      transition: .5s;
-    }
-
-    .project-card:hover .project-img {
-      transform: scale(1.08);
-    }
-
-    .project-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to top,
-          rgba(15, 23, 42, .95),
-          rgba(15, 23, 42, .3));
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 25px;
-      opacity: 0;
-      transition: .4s;
-    }
-
-    .project-card:hover .project-overlay {
-      opacity: 1;
-    }
-
-    /* Responsive */
-    @media(max-width:768px) {
-      .hero-title {
-        font-size: 2.2rem;
-      }
-
-      .hero-section {
-        text-align: center;
-        padding: 80px 0;
-      }
-
-      .hero-buttons {
-        justify-content: center;
-      }
-    }
- 
-  </style>
 </head>
 
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+  <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container">
 
       <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-        <img src="img/logo.ico" width="55" alt="Bayah Soft Logo">
+        <img src="img/logo.ico" width="42" alt="Bayah Soft Logo">
         <span class="nav-title">Bayah Soft</span>
       </a>
 
@@ -220,9 +46,8 @@
       </button>
 
       <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-        <ul class="navbar-nav fw-semibold align-items-center">
+        <ul class="navbar-nav align-items-center">
 
-         
           <li class="nav-item">
             <a class="nav-link" href="services.html">الخدمات</a>
           </li>
@@ -234,7 +59,8 @@
           <li class="nav-item">
             <a class="nav-link" href="contact.html">تواصل معنا</a>
           </li>
-           <li class="nav-item">
+
+          <li class="nav-item">
             <a class="nav-link active" href="index.html">الرئيسية</a>
           </li>
 
@@ -246,365 +72,278 @@
 
   <!-- Hero -->
   <section class="hero-section">
-
     <div class="container">
       <div class="row align-items-center g-5">
 
         <!-- Text -->
         <div class="col-lg-6">
 
-          <span class="hero-badge">
-            حلول ERP متكاملة للشركات
-          </span>
+          <span class="hero-badge"><span class="dot"></span> بنية قواعد بيانات قوية لأنظمة لا تتوقف</span>
 
           <h1 class="hero-title">
-            حلول برمجية احترافية<br>
-            تساعد أعمالك على النمو
+            نظام واحد يدير <span class="accent-word">حسابات شركتك</span>،<br>
+            مخازنها، وموظفيها
           </h1>
 
           <p class="hero-desc">
-            منذ عام 2017، تقدم Bayah Soft أنظمة ERP ومحاسبة متطورة تعتمد على Oracle Database،
-            بالإضافة إلى حلول CRM وHR لإدارة العمليات بكفاءة وتحسين أداء الشركات.
+            منذ 2017 نبني لشركات مصرية أنظمة ERP ومحاسبة وCRM وHR تحل محل جداول
+            Excel المتفرقة بنظام واحد مترابط، يعطيك رقمًا دقيقًا لحظة ما تحتاجه.
           </p>
 
           <div class="hero-buttons d-flex gap-3 flex-wrap mt-4">
-
-            <a href="services.html" class="btn btn-primary">
-              استكشف خدماتنا
-            </a>
-
-            <a href="contact.html" class="btn btn-outline-primary">
-              تواصل معنا
-            </a>
-
+            <a href="services.html" class="btn btn-primary">استكشف خدماتنا</a>
+            <a href="contact.html" class="btn btn-outline-primary">اطلب عرضًا توضيحيًا</a>
           </div>
 
         </div>
 
         <!-- Image -->
         <div class="col-lg-6 text-center position-relative image-container">
-
-          <img src="img/pexels-goumbik-669622.jpg"
-            alt="Bayah Soft"
-            class="hero-image "
-          >
-
+          <div class="hero-image-frame">
+            <img src="img/pexels-goumbik-669622.jpg" alt="فريق Bayah Soft أثناء العمل" class="hero-image">
+            <span class="hero-image-tag"><span class="dot"></span> يعمل الآن على قواعد بيانات قوية</span>
+          </div>
         </div>
 
       </div>
     </div>
-
   </section>
 
-
-
-<section class="py-5 bg-light">
-  <div class="container">
-
-    <div class="text-center mb-5">
-      <h2 class="section-title text-primary">لماذا Bayah Soft ؟</h2>
-      <p class="section-subtitle">
-        نقدم حلول تقنية موثوقة تساعد الشركات على التطور وتحقيق أفضل أداء.
-      </p>
-    </div>
-
-    <div class="row g-4">
-
-      <div class="col-md-4">
-        <div class="p-4 bg-white rounded-4 shadow-sm h-100 text-center">
-          <i class="fas fa-layer-group fa-3x text-primary mb-3"></i>
-          <h5 class="fw-bold">حلول متكاملة</h5>
-          <p>أنظمة ERP وCRM وHR مترابطة لإدارة أعمالك بكفاءة.</p>
+  <!-- Stats -->
+  <section class="stats-strip">
+    <div class="container">
+      <div class="row g-0">
+        <div class="col-6 col-md-3 stat-item">
+          <!-- <div class="stat-number">+9</div> -->
+          <p class="stat-number">سنوات في السوق المصري</p>
+        </div>
+        <div class="col-6 col-md-3 stat-item">
+          <!-- <div class="stat-number">4</div> -->
+          <p class="stat-number">أنظمة مترابطة: ERP، محاسبة، CRM، HR</p>
+        </div>
+        <div class="col-6 col-md-3 stat-item">
+          <!-- <div class="">قوية</div> -->
+          <p class="stat-number">قواعد بيانات تُبنى عليها كل أنظمتنا</p>
+        </div>
+        <div class="col-6 col-md-3 stat-item">
+          <!-- <div class="stat-number">24/7</div> -->
+          <p class="stat-number">دعم فني متواصل</p>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="col-md-4">
-        <div class="p-4 bg-white rounded-4 shadow-sm h-100 text-center">
-          <i class="fas fa-shield-alt fa-3x text-primary mb-3"></i>
-          <h5 class="fw-bold">أمان وموثوقية</h5>
-          <p>نعتمد على Oracle Database لضمان حماية البيانات واستقرار النظام.</p>
-        </div>
-      </div>
+  <!-- Why Bayah Soft -->
+  <section class="py-5">
+    <div class="container py-4">
 
-      <div class="col-md-4">
-        <div class="p-4 bg-white rounded-4 shadow-sm h-100 text-center">
-          <i class="fas fa-headset fa-3x text-primary mb-3"></i>
-          <h5 class="fw-bold">دعم فني مستمر</h5>
-          <p>فريق دعم جاهز لمساعدتك وتطوير أعمالك في أي وقت.</p>
+      <div class="row g-5">
+
+        <div class="col-lg-4">
+          <span class="section-eyebrow">لماذا Bayah Soft</span>
+          <h2 class="section-title">أنظمة تُبنى حول شركتك، لا العكس</h2>
+          <p class="section-subtitle mt-3">
+            لا نبيع نسخة جاهزة واحدة لكل الشركات. نفهم دورة العمل عندك أولًا،
+            ثم نضبط النظام عليها.
+          </p>
         </div>
+
+        <div class="col-lg-8">
+
+          <div class="why-row">
+            <div class="why-icon"><i class="fas fa-layer-group"></i></div>
+            <div class="why-content">
+              <h5>حلول متكاملة لا أنظمة منفصلة</h5>
+              <p>ERP وCRM وHR تتشارك نفس البيانات، فرقم المبيعات في التقرير المالي هو نفسه في تقرير المتابعة، بلا إدخال مزدوج ولا تعارض أرقام.</p>
+            </div>
+          </div>
+
+          <div class="why-row">
+            <div class="why-icon"><i class="fas fa-shield-alt"></i></div>
+            <div class="why-content">
+              <h5>بيانات آمنة على قواعد بيانات قوية</h5>
+              <p>نبني على قواعد بيانات قوية مصممة للأحمال العالية والاستقرار طويل المدى، فالنظام يتحمل نمو شركتك بدل أن يعيقه.</p>
+            </div>
+          </div>
+
+          <div class="why-row">
+            <div class="why-icon"><i class="fas fa-headset"></i></div>
+            <div class="why-content">
+              <h5>فريق دعم يرد فعليًا</h5>
+              <p>تواصل مباشر مع فريق يعرف نظامك بالاسم، متاح للمتابعة والتطوير بعد التسليم، مش بس وقت البيع.</p>
+            </div>
+          </div>
+
+        </div>
+
       </div>
 
     </div>
-  </div>
-  <div class="container">
-
-    <div class="row g-4 justify-content-center mt-2 py-4 text-center">
-
-      <div class="col-md-3">
-        <h2 class="fw-bold text-primary">9+</h2>
-        <p>سنوات خبرة</p>
-      </div>
-
-    
-      <div class="col-md-3">
-        <h2 class="fw-bold text-primary">24/7</h2>
-        <p>دعم فني</p>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-<section class="py-5 text-center">
-  
-</section>
-
+  </section>
 
   <!-- Projects -->
-  <!-- ================= Projects Section ================= -->
-<!-- ================= Projects Section ================= -->
-<section class="projects-section py-5 bg-light">
+  <section class="projects-section py-5">
+    <div class="container py-4">
 
-  <div class="container">
-
-    <!-- Section Header -->
-    <div class="text-center mb-5">
-
-      <span class="hero-badge">
-        أعمالنا البرمجية
-      </span>
-
-      <h2 class="section-title text-primary">
-        مشاريعنا
-      </h2>
-
-      <p class="section-subtitle mt-3">
-        نقدم حلولاً رقمية متكاملة تساعد الشركات على إدارة أعمالها
-        وتحسين الأداء من خلال أنظمة احترافية قابلة للتطوير.
-      </p>
-
-    </div>
-
-    <!-- Projects Grid -->
-    <div class="row g-4">
-
-      <!-- Accounting System -->
-      <div class="col-lg-4 col-md-6">
-
-        <div class="project-box h-100">
-
-          <div class="project-icon">
-            <i class="fas fa-chart-line"></i>
-          </div>
-
-          <span class="project-type">Accounting System</span>
-
-          <h4 class="project-title">نظام محاسبي متكامل</h4>
-
-          <p class="project-desc">
-            إدارة  المبيعات والمشتريات
-
-        مراكز التكلفة والتقارير المالية
-، حسابات العملاء والموردين
-  ،الفواتير والحسابات بدقة واحترافية
-،  المخازن وحركة الأصناف
-، المبيعات والمشتريات مع تقارير مالية دقيقة.
-
+      <div class="row mb-5">
+        <div class="col-lg-7">
+          <span class="section-eyebrow">أعمالنا البرمجية</span>
+          <h2 class="section-title">الأنظمة التي نبنيها</h2>
+          <p class="section-subtitle mt-3">
+            خمسة أنظمة أساسية تغطي دورة عمل الشركة الكاملة، من أول فاتورة بيع إلى آخر تقرير مالي.
           </p>
+        </div>
+      </div>
 
-          <div class="project-features">
-            <span>أداء قوي </span>
-            <span> أمان عالي </span>
-            <span> إدارة ذكية لأعمالك</span>
-            <span> قوة Oracle Database لإدارة أعمالك بكفاءة واستقرار بلا حدود</span>
+      <div class="row g-4">
+
+        <!-- Accounting System -->
+        <div class="col-lg-4 col-md-6">
+          <div class="project-box">
+            <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+            <span class="project-type">Accounting System</span>
+            <h4 class="project-title">نظام محاسبي متكامل</h4>
+            <p class="project-desc">
+              المبيعات والمشتريات، حسابات العملاء والموردين، الفواتير ومراكز التكلفة،
+              وحركة المخازن، كلها في تقارير مالية دقيقة تُحدَّث لحظيًا.
+            </p>
+            <div class="project-features">
+              <span>مراكز تكلفة</span>
+              <span>تقارير مالية لحظية</span>
+              <span>ربط مباشر بالمخازن</span>
+            </div>
           </div>
+        </div>
 
+        <!-- ERP -->
+        <div class="col-lg-4 col-md-6">
+          <div class="project-box">
+            <div class="project-icon"><i class="fas fa-building"></i></div>
+            <span class="project-type">ERP Solution</span>
+            <h4 class="project-title">نظام ERP متكامل</h4>
+            <p class="project-desc">
+              يربط المبيعات والمخزون والعمليات في نظام واحد، فكل قسم يشتغل على نفس
+              البيانات بدل ملفات منفصلة تتعارض مع بعضها.
+            </p>
+            <div class="project-features">
+              <span>إدارة العمليات</span>
+              <span>إدارة المخزون</span>
+              <span>أتمتة الأعمال</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- HR System -->
+        <div class="col-lg-4 col-md-6">
+          <div class="project-box">
+            <div class="project-icon"><i class="fas fa-user-clock"></i></div>
+            <span class="project-type">HR System</span>
+            <h4 class="project-title">نظام حضور وانصراف</h4>
+            <p class="project-desc">
+              حضور وانصراف، رواتب وخصومات، إجازات وسلف، وتقييمات دورية للموظفين،
+              محسوبة تلقائيًا وجاهزة للمراجعة.
+            </p>
+            <div class="project-features">
+              <span>رواتب وخصومات</span>
+              <span>إجازات وسلف</span>
+              <span>تقارير إدارية</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CRM -->
+        <div class="col-lg-4 col-md-6">
+          <div class="project-box">
+            <div class="project-icon"><i class="fas fa-users"></i></div>
+            <span class="project-type">CRM System</span>
+            <h4 class="project-title">نظام إدارة العملاء</h4>
+            <p class="project-desc">
+              بيانات العملاء وخطوط المتابعة، العروض والفواتير، وخدمة العملاء
+              والدعم الفني، مع تحليل أداء المبيعات بشكل مستمر.
+            </p>
+            <div class="project-features">
+              <span>متابعة فرص البيع</span>
+              <span>عروض وفواتير</span>
+              <span>تحليل أداء المبيعات</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Websites -->
+        <div class="col-lg-4 col-md-6">
+          <div class="project-box">
+            <div class="project-icon"><i class="fas fa-globe"></i></div>
+            <span class="project-type">Web Development</span>
+            <h4 class="project-title">تطوير مواقع ويب</h4>
+            <p class="project-desc">
+              مواقع للشركات والمتاجر الإلكترونية، مبنية للسرعة وتجربة استخدام
+              واضحة، وقابلة للربط بأنظمة ERP وCRM عند الحاجة.
+            </p>
+            <div class="project-features">
+              <span>مواقع شركات</span>
+              <span>Landing Pages</span>
+              <span>SEO</span>
+            </div>
+          </div>
         </div>
 
       </div>
 
-      <!-- ERP -->
-      <div class="col-lg-4 col-md-6">
-
-        <div class="project-box h-100">
-
-          <div class="project-icon">
-            <i class="fas fa-building"></i>
-          </div>
-
-          <span class="project-type">ERP Solution</span>
-
-          <h4 class="project-title">نظام ERP متكامل</h4>
-
-         <p class="project-desc">
-  منصة ERP متكاملة لإدارة العمليات، المبيعات، المخزون وربط جميع أقسام الشركة في نظام واحد.
-</p>
-
-          <div class="project-features">
-  <span>إدارة العمليات</span>
-  <span>إدارة المخزون</span>
-  <span>إدارة المبيعات</span>
-  <span>أتمتة الأعمال</span>
-</div>
-
+      <!-- CTA -->
+      <div class="cta-band mt-5 p-4 p-md-5 d-flex flex-wrap align-items-center justify-content-between gap-3">
+        <div>
+          <h3 class="mb-2">جاهز تشوف النظام شغال على بيانات شركتك؟</h3>
+          <p class="mb-0">نجهز عرضًا توضيحيًا مبني على دورة العمل عندك، مش عرضًا عامًا.</p>
         </div>
-
-      </div>
-
-      <!-- HR System -->
-      <div class="col-lg-4 col-md-6">
-
-        <div class="project-box h-100">
-
-          <div class="project-icon">
-            <i class="fas fa-user-clock"></i>
-          </div>
-
-          <span class="project-type">HR System</span>
-
-          <h4 class="project-title">نظام حضور وانصراف</h4>
-
-          <p class="project-desc"> نظام ذكي لإدارة شؤون الموظفين ،الحضور والانصراف،الرواتب والخصومات 
-          التقييمات والتقارير الإدارية  ، الإجازات والسلف. 
-          </p>
-
-          <div class="project-features">
-            <span>إدارة ذكية للموارد البشرية بدقة</span>
-            <span>سرعة</span>
-            <span>أمان عالي</span>
-          </div>
-
-        </div>
-
-      </div>
-
-      <!-- CRM -->
-      <div class="col-lg-4 col-md-6">
-
-        <div class="project-box h-100">
-
-          <div class="project-icon">
-            <i class="fas fa-users"></i>
-          </div>
-
-          <span class="project-type">CRM System</span>
-
-          <h4 class="project-title">نظام إدارة العملاء (CRM)</h4>
-
-          <p class="project-desc">
-            إدارة العملاء وبيانات التواصل ، المبيعات وخطوط المتابعة ، خدمة العملاء والدعم الفني ،العروض والفواتير ،التقارير وتحليل أداء المبيعات .        </p>
-
-          <div class="project-features">
-            <span>نظام ذكي </span>
-            <span>سريع</span>
-            <span>آمن</span>
-          </div>
-
-        </div>
-
-      </div>
-
-      <!-- Websites -->
-      <div class="col-lg-4 col-md-6">
-
-        <div class="project-box h-100">
-
-          <div class="project-icon">
-            <i class="fas fa-globe"></i>
-          </div>
-
-          <span class="project-type">Web Development</span>
-
-          <h4 class="project-title">تطوير مواقع ويب</h4>
-
-          <p class="project-desc">
-            تصميم وتطوير مواقع احترافية للشركات والمتاجر مع أداء عالي وتجربة مستخدم ممتازة.
-          </p>
-
-          <div class="project-features">
-            <span>مواقع شركات</span>
-            <span>Landing Pages</span>
-            <span>SEO</span>
-          </div>
-
-        </div>
-
+        <a href="contact.html" class="btn btn-light fw-bold px-4">احجز عرضًا توضيحيًا</a>
       </div>
 
     </div>
+  </section>
 
-  </div>
+  <!-- Footer -->
+  <footer class="footer-section pt-5">
+    <div class="container">
 
-</section>
+      <div class="row g-4">
 
-    <!-- Footer Start -->
-   <footer class="footer-section text-light pt-5">
-  <div class="container">
-
-    <div class="row g-4">
-
-      <!-- Brand -->
-      <div class="col-md-4">
-        <div class="d-flex align-items-center mb-3">
-          <img src="img/logo.ico" width="45" class="me-2">
-          <h5 class="fw-bold mb-0 nav-title">Bayah Soft</h5>
+        <!-- Brand -->
+        <div class="col-md-4">
+          <div class="d-flex align-items-center mb-3">
+            <img src="img/logo.ico" width="40" class="me-2">
+            <h5 class="fw-bold mb-0 nav-title">Bayah Soft</h5>
+          </div>
+          <p>أنظمة ERP ومحاسبة وCRM وHR على قواعد بيانات قوية، لإدارة شركتك من مكان واحد بدقة وثقة.</p>
         </div>
-        <p >
-          حلول برمجية ومحاسبية ذكية تساعدك على إدارة أعمالك بثقة واحتراف
-        </p>
+
+        <!-- Contact -->
+        <div class="col-md-4">
+          <h6 class="fw-bold mb-3">تواصل معنا</h6>
+          <p class="mb-2"><i class="fa fa-phone me-2"></i> 01000960702</p>
+          <p class="mb-2"><i class="fa fa-envelope me-2"></i> BayahSoft@gmail.com</p>
+          <p class="mb-0"><i class="fa fa-map-marker-alt me-2"></i> 24 محمد فريد أبو حديد، مدينة نصر، القاهرة</p>
+        </div>
+
+        <!-- Social -->
+        <div class="col-md-4">
+          <h6 class="fw-bold mb-3">تابعنا</h6>
+          <div class="d-flex gap-2">
+            <a class="social-btn" href="https://wa.me/201000960702" aria-label="واتساب"><i class="fab fa-whatsapp"></i></a>
+            <a class="social-btn" href="https://www.linkedin.com/company/bayah-egypt/" target="_blank" aria-label="لينكدإن"><i class="fab fa-linkedin-in"></i></a>
+            <a class="social-btn" href="https://www.facebook.com/bayahegypt/" target="_blank" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+
       </div>
 
-      <!-- Contact -->
-    <div class="col-md-4">
-  <h6 class="fw-bold mb-3 text-primary">تواصل معنا</h6>
-
-  <!-- Phone -->
-  <p class="mb-2">
-    <i class="fa fa-phone me-2 text-primary"></i> 01000960702
-  </p>
-
-  <!-- Email -->
-  <p class="mb-2">
-    <i class="fa fa-envelope me-2 text-primary"></i>
-    BayahSoft@gmail.com
-  </p>
-
-  <!-- Address -->
-  <p class="mb-0">
-    <i class="fa fa-map-marker-alt me-2 text-primary"></i>
-    24 Mohammed Farid Abou Hadid, Nasr City, Cairo
-  </p>
-</div>
-
-   <!-- Social -->
-      <div class="col-md-4">
-        <h6 class="fw-bold mb-3 text-primary">تابعنا</h6>
-        <div class="d-flex gap-2">
-         
-        
-                <a class="social-btn" href="https://wa.me/201000960702" class="whatsapp">
-        <i class="fab fa-whatsapp"></i> 
-      </a>
-        <a class="social-btn" href="https://www.linkedin.com/company/bayah-egypt/" target="_blank">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-       <a class="social-btn" href="https://www.facebook.com/bayahegypt/" target="_blank">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-        </div>
+      <!-- Bottom -->
+      <div class="footer-bottom text-center mt-4 pt-3">
+        © 2026 Bayah Soft — جميع الحقوق محفوظة
       </div>
 
     </div>
+  </footer>
 
-    <!-- Bottom -->
-    <div class="footer-bottom text-center mt-4 pt-3">
-      © 2026 Bayah Soft — All Rights Reserved
-    </div>
-
-  </div>
-</footer>
-    <!-- Footer End -->
   <!-- JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
