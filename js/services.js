@@ -1,5 +1,6 @@
-function openWindow(departmentName) {
-  localStorage.setItem('selectedDepartment', departmentName);
+function openWindow(customer) {
+  // Store the customer's own data (not just the department/activity name)
+  localStorage.setItem('selectedCustomer', JSON.stringify(customer));
   window.location.href = 'department.html';
 }
 
@@ -13,34 +14,96 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('departments_full_data.json')
       .then(res => res.json())
       .then(data => {
-        data.forEach((dep, index) => {
-          const section = document.createElement('div');
-          section.className = 'card h-100 shadow-sm department-card text-center border-0';
-          section.style.cursor = 'pointer';
-
-          // تطبيق الألوان بالتناوب من لوحة الألوان
-          const colorClass = `bg-card-palette-${(index % 5) + 1}`;
-          section.classList.add(colorClass);
-
-          // Click handler
-          section.onclick = () => openWindow(dep.name.replace(/'/g, "\\'"));
-
-          // Card content
-          section.innerHTML = `
-            <div class="card-body py-4">
-              <h5 class="card-title fw-semibold">
-                ${dep.name}
-              </h5>
-            </div>
-          `;
-
-          // Wrap in Bootstrap column
-          const col = document.createElement('div');
-          col.className = 'col-12 col-sm-6 col-md-3 mb-4 d-flex justify-content-center';
-          col.dataset.name = dep.name; // used by the search filter below
-          col.appendChild(section);
-          container.appendChild(col);
+        // Flatten: pull every customer out of every department into one list
+        const allCustomers = [];
+        data.forEach(dep => {
+          (dep.customers || []).forEach(customer => {
+            if (!customer || !customer.name) return; // skip empty/malformed entries
+            allCustomers.push({
+              ...customer,
+              department: dep.name,
+              icon: dep.icon || ''
+            });
+          });
         });
+
+    
+allCustomers.forEach((customer, index) => {
+  const col = document.createElement('div');
+  col.className = 'col-12 col-sm-6 col-lg-4 col-xl-3 customer-col';
+
+  const placeText = Array.isArray(customer.place)
+    ? customer.place.join('، ')
+    : (customer.place || '');
+
+  // Search data
+  col.dataset.name = [
+    customer.name,
+    customer.activity,
+    placeText
+  ]
+    .filter(Boolean)
+    .join(' ');
+
+  const section = document.createElement('article');
+  section.className = 'customer-card';
+
+  // section.onclick = () => openWindow(customer);
+
+  section.innerHTML = `
+    <div class="customer-card-inner">
+
+      <!-- Top -->
+      <div class="customer-card-top">
+        <span class="customer-number">
+          ${String(index + 1).padStart(2, '0')}
+        </span>
+
+        <div class="customer-icon">
+          <i class="fas fa-building"></i>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="customer-content">
+
+        <h5 class="customer-name">
+          ${customer.name}
+        </h5>
+
+        ${
+          customer.activity
+            ? `
+              <p class="customer-activity">
+                ${customer.activity}
+              </p>
+            `
+            : ''
+        }
+
+        ${
+          placeText
+            ? `
+              <div class="customer-location">
+                <i class="fas fa-location-dot"></i>
+                <span>${placeText}</span>
+              </div>
+            `
+            : ''
+        }
+
+      </div>
+
+
+
+    </div>
+  `;
+
+  col.appendChild(section);
+  container.appendChild(col);
+});
+
+
 
         if (spinner) spinner.classList.remove('show');
         filterDepartments(); // apply current search value, if any, once cards exist
@@ -74,34 +137,3 @@ document.addEventListener('DOMContentLoaded', () => {
     searchInput.addEventListener('input', filterDepartments);
   }
 });
-
-const params = new URLSearchParams(window.location.search);
-const service = params.get("service");
-
-const content = {
-  erp: {
-    title: "ERP System",
-    intro: "https://drive.google.com/file/d/1rCmjzZPmBWCEVjN9ScODaSTf87WpCkO-/preview",
-    presentation: "https://drive.google.com/file/d/1G8eO9iMtU0TPjlHDZ3MCqiZXq2-TLq3O/preview",
-    pdf: "erp.pdf"
-  },
-  hr: {
-    title: "HR System",
-    intro: "PUT_HR_VIDEO_LINK",
-    presentation: "PUT_HR_PRESENTATION",
-    pdf: "hr.pdf"
-  },
-  crm: {
-    title: "CRM System",
-    intro: "PUT_CRM_VIDEO_LINK",
-    presentation: "PUT_CRM_PRESENTATION",
-    pdf: "crm.pdf"
-  }
-};
-
-if (content[service]) {
-  document.querySelector("h5").innerHTML = `<i class="fas fa-play-circle me-2"></i>Introduction to ${content[service].title}`;
-  document.querySelectorAll("iframe")[0].src = content[service].intro;
-  document.querySelectorAll("iframe")[1].src = content[service].presentation;
-  document.querySelectorAll("iframe")[2].src = content[service].pdf;
-}
