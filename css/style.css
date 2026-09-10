@@ -864,12 +864,15 @@ a:focus-visible {
 }
 
 .modal-header .btn-close {
-  filter: invert(1) grayscale(1) brightness(2);
+  /* filter: invert(1) grayscale(1) brightness(2); */
+  display:none;
 }
 
 .modal-title {
   font-family: 'Almarai', 'Cairo', sans-serif;
   font-weight: 800;
+  color: #fff;
+  text-align: center !important;
 }
 
 .modal-body p { color: var(--text); }

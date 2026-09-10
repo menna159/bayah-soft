@@ -56,18 +56,27 @@ document.addEventListener("DOMContentLoaded", function () {
   const params = new URLSearchParams(window.location.search);
   const service = params.get("service");
 
-  const erpSection = document.getElementById("erpSection");
+  const serviceSection = document.getElementById("serviceSection");
+  const serviceTitle = document.getElementById("serviceTitle");
   const imagesSection = document.getElementById("imagesSection");
   const imageContainer = document.getElementById("imageContainer");
+  const videoSection = document.getElementById("videoSection");
 
   const content = {
     erp: {
+      title: "ERP System",
       type: "video",
       intro: "https://drive.google.com/file/d/1rCmjzZPmBWCEVjN9ScODaSTf87WpCkO-/preview",
       presentation: "https://drive.google.com/file/d/1G8eO9iMtU0TPjlHDZ3MCqiZXq2-TLq3O/preview",
       pdf: "خريطة تدفق العمليات -لنظام ابصار.pdf"
     },
+    accounting: {
+      title: "برنامج Bayah المحاسبي",
+      type: "video_local",
+      video: "img/bayah.mp4"
+    },
     hr: {
+      title:"HR System",
       type: "images",
         images: Array.from({ length: 14 }, (_, i) => i + 1)
     .filter(num => num !== 5) // استثناء hr5
@@ -75,6 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     },
     crm: {
+      title: "CRM System",
       type: "images",
         images: Array.from({ length: 10 }, (_, i) => `img/crm/crm${i + 1}.jpg`)
 
@@ -82,20 +92,31 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   if (!content[service]) return;
-
+  serviceTitle.textContent = content[service].title;
   // ERP
   if (content[service].type === "video") {
-    erpSection.style.display = "block";
+    serviceSection.style.display = "block";
     imagesSection.style.display = "none";
+    videoSection.style.display = "none";
 
     document.getElementById("introVideo").src = content[service].intro;
     document.getElementById("presentationVideo").src = content[service].presentation;
     document.getElementById("pdfViewer").src = content[service].pdf;
   }
 
+  // Accounting (single local video)
+  if (content[service].type === "video_local") {
+    serviceSection.style.display = "none";
+    imagesSection.style.display = "none";
+    videoSection.style.display = "block";
+
+    document.getElementById("localVideo").src = content[service].video;
+  }
+
   // HR + CRM
   if (content[service].type === "images") {
-    erpSection.style.display = "none";
+    serviceSection.style.display = "none";
+    videoSection.style.display = "none";
     imagesSection.style.display = "block";
 
     imageContainer.innerHTML = "";
@@ -163,32 +184,42 @@ function closeImgModal() {
     </div>
   </nav>
 
- <div class="container py-5">
+ <div class="container py-3">
+    <h2 class="mb-4 text-primary text-center" id="serviceTitle"></h2>
 
   <!-- ERP Section -->
-  <div id="erpSection">
-
+  <div id="serviceSection">
     <div class="section-card">
-      <h5 class="mb-3 text-primary">
+      <h5 class="mb-3 text-secondary">
         <i class="fas fa-play-circle me-2"></i>Introduction
       </h5>
       <iframe id="introVideo"></iframe>
     </div>
 
     <div class="section-card">
-      <h2 class="mb-3 text-primary">
+      <h5 class="mb-3 text-secondary">
         <i class="fas fa-video me-2"></i>Presentation
-      </h2>
+      </h5>
       <iframe id="presentationVideo"></iframe>
     </div>
 
     <div class="section-card">
-      <h5 class="mb-3 text-primary">
+      <h5 class="mb-3 text-secondary gap">
         <i class="fas fa-file-pdf me-2"></i>PDF
       </h5>
       <iframe id="pdfViewer"></iframe>
     </div>
 
+  </div>
+
+  <!-- Video Section (Accounting - single local video) -->
+  <div id="videoSection" style="display:none;">
+    <div class="section-card">
+      <h5 class="mb-3 text-primary">
+        <i class="fas fa-play-circle me-2"></i>برنامج بايه المحاسبي
+      </h5>
+      <video id="localVideo" controls></video>
+    </div>
   </div>
 
   <!-- Images Section (HR + CRM) -->
