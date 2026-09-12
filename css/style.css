@@ -521,6 +521,8 @@ a:focus-visible {
   border-radius: 4px;
   padding: 34px 28px;
   height: 100%;
+  display: flex;
+  flex-direction: column;
   transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
   position: relative;
 }
@@ -589,6 +591,118 @@ a:focus-visible {
   border-radius: 30px;
   font-size: 0.8rem;
   font-weight: 600;
+}
+
+/********** Project samples (live reference links) **********/
+.project-box .project-samples {
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+.samples-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.samples-label::before {
+  content: '';
+  width: 14px;
+  height: 1px;
+  background: var(--accent);
+  display: inline-block;
+}
+
+.samples-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  gap: 8px;
+}
+
+.sample-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 11px 14px;
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--ink-soft);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.85rem;
+  font-family: 'IBM Plex Sans Arabic', 'Cairo', sans-serif;
+  transition: background var(--transition), border-color var(--transition), color var(--transition), transform var(--transition);
+}
+
+.sample-link .sample-name {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  overflow: hidden;
+}
+
+.sample-link .sample-name::before {
+  content: '';
+  flex: 0 0 auto;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  transition: background var(--transition);
+}
+
+.sample-link .sample-domain {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  direction: ltr;
+  unicode-bidi: plaintext;
+}
+
+.sample-link .sample-arrow {
+  flex: 0 0 auto;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--ink-soft);
+  font-size: 0.7rem;
+  transition: background var(--transition), border-color var(--transition), color var(--transition), transform var(--transition);
+}
+
+.sample-link:hover {
+  background: var(--ink-soft);
+  border-color: var(--ink-soft);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.sample-link:hover .sample-name::before {
+  background: var(--accent-soft);
+}
+
+.sample-link:hover .sample-arrow {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--ink);
+  transform: translate(-3px, -3px);
+}
+
+[data-theme="dark"] .sample-link {
+  background: rgba(255,255,255,0.03);
 }
 
 /********** CTA band **********/
@@ -946,12 +1060,6 @@ a:focus-visible {
   pointer-events: none;
   transition: transform 0.4s ease, opacity 0.4s ease;
 }
-
-/* .customer-card:hover {
-  transform: translateY(-8px);
-  border-color: var(--accent);
-  box-shadow: 0 20px 45px rgba(16, 27, 45, 0.13);
-} */
 
 .customer-card:hover::before {
   background: var(--accent);
