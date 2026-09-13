@@ -55,9 +55,7 @@ allCustomers.forEach((customer, index) => {
 
       <!-- Top -->
       <div class="customer-card-top">
-        <span class="customer-number">
-          ${String(index + 1).padStart(2, '0')}
-        </span>
+        
 
         <div class="customer-icon">
           <i class="fas fa-building"></i>
